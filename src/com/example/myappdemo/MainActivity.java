@@ -11,13 +11,16 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
 	private List<String> titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
-	private ViewPager viewPager;
-	private PagerAdapter pagerAdapter;
+	private ViewPager viewPager;//ViewPager 
+	private ListView listView;//ListView
+	private PagerAdapter pagerAdapter;//Adapter for viewpager 
+	private ArrayAdapter<String> arrayAdapter;//Adapter for listview
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,10 +56,10 @@ public class MainActivity extends Activity {
 		 *  initialize the views
 		 * */
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
-		
+		listView = (ListView) page1.findViewById(R.id.listView1);
 		
 		/*
-		 * initialize pager adapter
+		 * initialize adapters
 		 * */
 		pagerAdapter = new PagerAdapter() {
 			
@@ -93,14 +96,28 @@ public class MainActivity extends Activity {
 				return super.getItemPosition(object);
 			}
 		};
+		arrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_expandable_list_item_1, getData());
 		
 		/*
 		 *  set adapter
 		 * */
 		viewPager.setAdapter(pagerAdapter);
+		listView.setAdapter(arrayAdapter);
 		
 		
-		
+	}
+
+	private List<String> getData() {
+		List<String> data = new ArrayList<String>();
+		data.add("data1");
+		data.add("data2");
+		data.add("data3");
+		data.add("data4");
+		data.add("data5");
+		data.add("data6");
+		data.add("data7");
+		data.add("data8");
+		return data;
 	}
 
 	@Override
