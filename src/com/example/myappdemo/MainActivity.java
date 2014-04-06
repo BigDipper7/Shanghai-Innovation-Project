@@ -3,8 +3,6 @@ package com.example.myappdemo;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.myappdemo.Utils.MyUtils;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -13,18 +11,18 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import com.example.myappdemo.Utils.MyUtils;
 
 public class MainActivity extends Activity {
 	private List<String> titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
-	private ListView listView;//ListView
+	private ListView listView, listView2;//ListView
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
-	private ArrayAdapter<View> arrayAdapter;//Adapter for listview---->not use
-	private SimpleAdapter simpleAdapter;
+	private SimpleAdapter simpleAdapter, simpleAdapter2;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +44,7 @@ public class MainActivity extends Activity {
 		titleList.add(xmlTitle2);
 		titleList.add(xmlTitle1);
 		titleList.add(xmlTitle3);
-		getLayoutInflater();
+		
 		/*
 		 *  initialize the page view
 		 * */
@@ -59,13 +57,14 @@ public class MainActivity extends Activity {
 		viewList.add(page2);
 		viewList.add(page1);
 		viewList.add(page3);
-		
-				
+			
 		/*
 		 *  initialize the views
 		 * */
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
 		listView = (ListView) page1.findViewById(R.id.listView1);
+		listView2 = (ListView) page2.findViewById(R.id.listView1);
+		
 		
 		/*
 		 * initialize adapters
@@ -107,32 +106,16 @@ public class MainActivity extends Activity {
 		};
 //		arrayAdapter = new ArrayAdapter<View>(MainActivity.this, android.R.layout.simple_expandable_list_item_1, MyUtils.getData(MainActivity.this));
 		simpleAdapter = new SimpleAdapter(MainActivity.this, MyUtils.getData(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
+		simpleAdapter2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page2_view_for_listview, new String[] {"txt1", "txt2", "txt3"}, new int[] {R.id.textView1, R.id.textView2, R.id.textView3});
 		
 		/*
 		 *  set adapter
 		 * */
 		viewPager.setAdapter(pagerAdapter);
 		listView.setAdapter(simpleAdapter);
-		
+		listView2.setAdapter(simpleAdapter2);
 		
 	}
-	private List<View> getData() {
-		
-		return null;
-	}
-
-//	private List<String> getData1() {
-//		List<String> data = new ArrayList<String>();
-//		data.add("data1");
-//		data.add("data2");
-//		data.add("data3");
-//		data.add("data4");
-//		data.add("data5");
-//		data.add("data6");
-//		data.add("data7");
-//		data.add("data8");
-//		return data;
-//	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
