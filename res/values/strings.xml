@@ -3,8 +3,7 @@
 
     <string name="app_name">My App DeMo</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="this_is_profile_icon_">This is profile icon!</string>
-    <string name="user_name_">"User Name: "</string>
+    <string name="user_name_">&quot;用户名: &quot;</string>
 
 </resources>

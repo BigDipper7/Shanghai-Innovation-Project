@@ -3,6 +3,8 @@ package com.example.myappdemo;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.myappdemo.Utils.MyUtils;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -13,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 public class MainActivity extends Activity {
 	private List<String> titleList = new ArrayList<String>();
@@ -20,7 +23,8 @@ public class MainActivity extends Activity {
 	private ViewPager viewPager;//ViewPager 
 	private ListView listView;//ListView
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
-	private ArrayAdapter<String> arrayAdapter;//Adapter for listview
+	private ArrayAdapter<View> arrayAdapter;//Adapter for listview---->not use
+	private SimpleAdapter simpleAdapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,24 +38,29 @@ public class MainActivity extends Activity {
 		/*
 		 * initialize the page titles
 		 * */
+		String xmlTitle4 = "首页";
+		String xmlTitle2 = "搜索";
 		String xmlTitle1 = "我的租房";
-		String xmlTitle2 = "Page 2";
-		String xmlTitle3 = "Page 3";
-		titleList.add(xmlTitle1);
+		String xmlTitle3 = "账户设置";
+		titleList.add(xmlTitle4);
 		titleList.add(xmlTitle2);
+		titleList.add(xmlTitle1);
 		titleList.add(xmlTitle3);
 		getLayoutInflater();
 		/*
 		 *  initialize the page view
 		 * */
 		LayoutInflater layoutInflater = LayoutInflater.from(MainActivity.this);
-		View page1 = layoutInflater.inflate(R.layout.layout1, null);
-		View page2 = layoutInflater.inflate(R.layout.layout2, null);
-		View page3 = layoutInflater.inflate(R.layout.layout3, null);
-		viewList.add(page1);
+		View page4 = layoutInflater.inflate(R.layout.page4, null);
+		View page2 = layoutInflater.inflate(R.layout.page2, null);
+		View page1 = layoutInflater.inflate(R.layout.page1, null);
+		View page3 = layoutInflater.inflate(R.layout.page3, null);
+		viewList.add(page4);
 		viewList.add(page2);
+		viewList.add(page1);
 		viewList.add(page3);
 		
+				
 		/*
 		 *  initialize the views
 		 * */
@@ -96,29 +105,34 @@ public class MainActivity extends Activity {
 				return super.getItemPosition(object);
 			}
 		};
-		arrayAdapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_expandable_list_item_1, getData());
+//		arrayAdapter = new ArrayAdapter<View>(MainActivity.this, android.R.layout.simple_expandable_list_item_1, MyUtils.getData(MainActivity.this));
+		simpleAdapter = new SimpleAdapter(MainActivity.this, MyUtils.getData(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
 		
 		/*
 		 *  set adapter
 		 * */
 		viewPager.setAdapter(pagerAdapter);
-		listView.setAdapter(arrayAdapter);
+		listView.setAdapter(simpleAdapter);
 		
 		
+	}
+	private List<View> getData() {
+		
+		return null;
 	}
 
-	private List<String> getData() {
-		List<String> data = new ArrayList<String>();
-		data.add("data1");
-		data.add("data2");
-		data.add("data3");
-		data.add("data4");
-		data.add("data5");
-		data.add("data6");
-		data.add("data7");
-		data.add("data8");
-		return data;
-	}
+//	private List<String> getData1() {
+//		List<String> data = new ArrayList<String>();
+//		data.add("data1");
+//		data.add("data2");
+//		data.add("data3");
+//		data.add("data4");
+//		data.add("data5");
+//		data.add("data6");
+//		data.add("data7");
+//		data.add("data8");
+//		return data;
+//	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -126,5 +140,7 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	
+	
 
 }

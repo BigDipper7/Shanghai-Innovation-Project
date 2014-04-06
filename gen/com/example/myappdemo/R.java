@@ -23,9 +23,11 @@ public final class R {
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
         public static final int profile_icon=0x7f020001;
+        public static final int txt_search_default=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f080006;
+        public static final int action_settings=0x7f080007;
+        public static final int editText1=0x7f080006;
         public static final int imageView1=0x7f080002;
         public static final int listView1=0x7f080005;
         public static final int pagertab=0x7f080001;
@@ -35,9 +37,12 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int layout1=0x7f030001;
-        public static final int layout2=0x7f030002;
-        public static final int layout3=0x7f030003;
+        public static final int page1=0x7f030001;
+        public static final int page1_liststyle_for_listview=0x7f030002;
+        public static final int page1_view_for_listview=0x7f030003;
+        public static final int page2=0x7f030004;
+        public static final int page3=0x7f030005;
+        public static final int page4=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -45,9 +50,8 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int this_is_profile_icon_=0x7f050003;
-        public static final int user_name_=0x7f050004;
+        public static final int this_is_profile_icon_=0x7f050002;
+        public static final int user_name_=0x7f050003;
     }
     public static final class style {
         /** 
