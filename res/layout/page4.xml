@@ -67,7 +67,6 @@
                         android:layout_width="97dp"
                         android:layout_height="wrap_content"
                         android:text="租房" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -103,9 +102,7 @@
                         android:layout_width="97dp"
                         android:layout_height="wrap_content"
                         android:text="我要出租" />
-
                 </LinearLayout>
-
             </LinearLayout>
 
             <FrameLayout
@@ -129,12 +126,10 @@
                 android:id="@+id/listView1"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
+                android:background="@layout/page_liststyle_for_listview"
                 android:divider="#000000"
-                android:dividerHeight="1dp"
-                android:background="@layout/page_liststyle_for_listview" >
-
+                android:dividerHeight="1dp" >
             </ListView>
-
         </LinearLayout>
 
     </ScrollView>
