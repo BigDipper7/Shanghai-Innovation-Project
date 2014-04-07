@@ -148,7 +148,53 @@ public class MyUtils {
 
 		return data;
 	}
+	
+	public static List<Map<String, Object>> getData4() {
+		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
+		Map<String, Object> item1 = new HashMap<String, Object>();
+		item1.put("txt", "4月上海或迎\"迟到的小阳春\"");
+		item1.put("txt2", "     >  ");
+		data.add(item1);
+
+		item1 = new HashMap<String, Object>();
+		item1.put("txt", "八九十年代房频出事 房子寿命太短");
+		item1.put("txt2", "     >  ");
+		data.add(item1);
+
+		item1 = new HashMap<String, Object>();
+		item1.put("txt", "央媒曝中介违规 付服务费即可垫资");
+		item1.put("txt2", "     >  ");
+		data.add(item1);
+
+		item1 = new HashMap<String, Object>();
+		item1.put("txt", "承压过大 万科\"事业合伙人\"遭质疑");
+		item1.put("txt2", "     >  ");
+		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt", "");
+//		item1.put("txt2", "     >  ");
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt", "关于我们");
+//		item1.put("txt2", "     >  ");
+//		data.add(item1);
+//
+//		item1 = new HashMap<String, Object>();
+//		item1.put("txt", "免责声明");
+//		item1.put("txt2", "     >  ");
+//		data.add(item1);
+
+		return data;
+	}
+
+	/**
+	 * 设置listview真实高度 解决了scroll view中间listview只显示一行的问题 
+	 * @param listView
+	 * @param context
+	 */
 	public static void setListViewHeightBasedOnChildren(ListView listView, Context context) {   
         // 获取ListView对应的Adapter   
         ListAdapter listAdapter = listView.getAdapter();   

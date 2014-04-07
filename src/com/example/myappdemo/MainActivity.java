@@ -20,9 +20,9 @@ public class MainActivity extends Activity {
 	private List<String> titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
-	private ListView listView, listView2, listView3;//ListView
+	private ListView listView, listView2, listView3, listView4;//ListView
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
-	private SimpleAdapter simpleAdapter, simpleAdapter2, simpleAdapter3;
+	private SimpleAdapter simpleAdapter, simpleAdapter2, simpleAdapter3, simpleAdapter4;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +65,8 @@ public class MainActivity extends Activity {
 		listView = (ListView) page1.findViewById(R.id.listView1);
 		listView2 = (ListView) page2.findViewById(R.id.listView1);
 		listView3 = (ListView) page3.findViewById(R.id.listView1);
-		
-		
+		listView4 = (ListView) page4.findViewById(R.id.listView1);
+				
 		/*
 		 * initialize adapters
 		 * */
@@ -109,6 +109,7 @@ public class MainActivity extends Activity {
 		simpleAdapter = new SimpleAdapter(MainActivity.this, MyUtils.getData(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
 		simpleAdapter2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page2_view_for_listview, new String[] {"txt1", "txt2", "txt3"}, new int[] {R.id.textView1, R.id.textView2, R.id.textView3});
 		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
+		simpleAdapter4 = new SimpleAdapter(MainActivity.this, MyUtils.getData4(), R.layout.page4_view_for_listview, new String[] {"txt", "txt2"}, new int[] {R.id.textView1, R.id.textView2});
 		
 		/*
 		 *  set adapter
@@ -117,13 +118,15 @@ public class MainActivity extends Activity {
 		listView.setAdapter(simpleAdapter);
 		listView2.setAdapter(simpleAdapter2);
 		listView3.setAdapter(simpleAdapter3);
-		
+		listView4.setAdapter(simpleAdapter4);
+
 		/*
 		 *  set list view height
 		 * */
 		MyUtils.setListViewHeightBasedOnChildren(listView, MainActivity.this);
 		MyUtils.setListViewHeightBasedOnChildren(listView2, MainActivity.this);
 		MyUtils.setListViewHeightBasedOnChildren(listView3, MainActivity.this);
+		MyUtils.setListViewHeightBasedOnChildren(listView4, MainActivity.this);
 		
 	}
 
