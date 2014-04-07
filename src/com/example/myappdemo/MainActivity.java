@@ -20,9 +20,9 @@ public class MainActivity extends Activity {
 	private List<String> titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
-	private ListView listView, listView2;//ListView
+	private ListView listView, listView2, listView3;//ListView
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
-	private SimpleAdapter simpleAdapter, simpleAdapter2;
+	private SimpleAdapter simpleAdapter, simpleAdapter2, simpleAdapter3;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 		String xmlTitle4 = "首页";
 		String xmlTitle2 = "搜索";
 		String xmlTitle1 = "我的租房";
-		String xmlTitle3 = "账户设置";
+		String xmlTitle3 = "更多";
 		titleList.add(xmlTitle4);
 		titleList.add(xmlTitle2);
 		titleList.add(xmlTitle1);
@@ -64,6 +64,7 @@ public class MainActivity extends Activity {
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
 		listView = (ListView) page1.findViewById(R.id.listView1);
 		listView2 = (ListView) page2.findViewById(R.id.listView1);
+		listView3 = (ListView) page3.findViewById(R.id.listView1);
 		
 		
 		/*
@@ -107,6 +108,7 @@ public class MainActivity extends Activity {
 //		arrayAdapter = new ArrayAdapter<View>(MainActivity.this, android.R.layout.simple_expandable_list_item_1, MyUtils.getData(MainActivity.this));
 		simpleAdapter = new SimpleAdapter(MainActivity.this, MyUtils.getData(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
 		simpleAdapter2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page2_view_for_listview, new String[] {"txt1", "txt2", "txt3"}, new int[] {R.id.textView1, R.id.textView2, R.id.textView3});
+		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
 		
 		/*
 		 *  set adapter
@@ -114,6 +116,14 @@ public class MainActivity extends Activity {
 		viewPager.setAdapter(pagerAdapter);
 		listView.setAdapter(simpleAdapter);
 		listView2.setAdapter(simpleAdapter2);
+		listView3.setAdapter(simpleAdapter3);
+		
+		/*
+		 *  set list view height
+		 * */
+		MyUtils.setListViewHeightBasedOnChildren(listView, MainActivity.this);
+		MyUtils.setListViewHeightBasedOnChildren(listView2, MainActivity.this);
+		MyUtils.setListViewHeightBasedOnChildren(listView3, MainActivity.this);
 		
 	}
 
