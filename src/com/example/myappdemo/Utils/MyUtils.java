@@ -214,7 +214,7 @@ public class MyUtils {
    
         ViewGroup.LayoutParams params = listView.getLayoutParams();   
         //TODO  不知道为什么bug了  不能写成14  少1p的divider的高度
-        params.height = totalHeight+ (listView.getDividerHeight() * (listAdapter.getCount() - 1)) + DensityUtil.dip2px(context, 13);   
+        params.height = totalHeight+ (listView.getDividerHeight() * (listAdapter.getCount() - 1)) + DensityUtil.dip2px(context, 14);   
         // listView.getDividerHeight()获取子项间分隔符占用的高度   
         //DensityUtil.dip2px(context, 14) 是因为最外层的背景边框的pedding值是7dp &7dp 共14dp将其转化成px  然后再进行赋值
         // params.height最后得到整个ListView完整显示需要的高度   

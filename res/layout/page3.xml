@@ -82,6 +82,7 @@
                 android:layout_height="fill_parent"
                 android:divider="#000000"
                 android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
                 android:background="@layout/page_liststyle_for_listview" >
             </ListView>
         </LinearLayout>
