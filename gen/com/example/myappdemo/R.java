@@ -21,9 +21,15 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int profile_icon=0x7f020001;
-        public static final int txt_search_default=0x7f020002;
+        public static final int aio_tips_arrow_gray=0x7f020000;
+        public static final int aio_tips_arrow_white=0x7f020001;
+        public static final int boss_unipay_arrow_right_normal=0x7f020002;
+        public static final int boss_unipay_arrow_right_pressed=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int profile_icon=0x7f020005;
+        public static final int qzone_albumlist_icon_forward=0x7f020006;
+        public static final int qzone_albumlist_icon_forward_click=0x7f020007;
+        public static final int txt_search_default=0x7f020008;
     }
     public static final class id {
         public static final int TextView01=0x7f08000a;
