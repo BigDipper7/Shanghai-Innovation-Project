@@ -7,17 +7,19 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.example.myappdemo.Utils.MyUtils;
 
 public class MainActivity extends Activity {
-	private List<String> titleList = new ArrayList<String>();
+	private List<String>  titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
 	private ListView listView, listView2, listView3, listView4;//ListView
@@ -52,7 +54,8 @@ public class MainActivity extends Activity {
 		View page4 = layoutInflater.inflate(R.layout.page4, null);
 		View page2 = layoutInflater.inflate(R.layout.page2, null);
 		View page1 = layoutInflater.inflate(R.layout.page1, null);
-		View page3 = layoutInflater.inflate(R.layout.page3, null);
+//		View page3 = layoutInflater.inflate(R.layout.page3, null);
+		View page3 = layoutInflater.inflate(R.layout.page_4, null);
 		viewList.add(page4);
 		viewList.add(page2);
 		viewList.add(page1);
@@ -112,12 +115,25 @@ public class MainActivity extends Activity {
 		simpleAdapter4 = new SimpleAdapter(MainActivity.this, MyUtils.getData4(), R.layout.page4_view_for_listview, new String[] {"txt", "txt2"}, new int[] {R.id.textView1, R.id.textView2});
 		
 		/*
+		 * test
+		 * 
+		 * */
+//		View  lay = LayoutInflater.from(MainActivity.this).inflate(R.layout.page_4, null);
+		LinearLayout ll = (LinearLayout) page3.findViewById(R.id.linearLayout1);
+		
+		for(int i=0; i< simpleAdapter.getCount(); i++) {
+			View v = simpleAdapter.getView(i, null, ll);
+			Log.e("View v Innnnnnnnnn", "Initialize.............");
+			ll.addView(v);
+		}
+		
+		/*
 		 *  set adapter
 		 * */
 		viewPager.setAdapter(pagerAdapter);
 		listView.setAdapter(simpleAdapter);
 		listView2.setAdapter(simpleAdapter2);
-		listView3.setAdapter(simpleAdapter3);
+//		listView3.setAdapter(simpleAdapter3);
 		listView4.setAdapter(simpleAdapter4);
 
 		/*
@@ -125,7 +141,7 @@ public class MainActivity extends Activity {
 		 * */
 		MyUtils.setListViewHeightBasedOnChildren(listView, MainActivity.this);
 		MyUtils.setListViewHeightBasedOnChildren(listView2, MainActivity.this);
-		MyUtils.setListViewHeightBasedOnChildren(listView3, MainActivity.this);
+//		MyUtils.setListViewHeightBasedOnChildren(listView3, MainActivity.this);
 		MyUtils.setListViewHeightBasedOnChildren(listView4, MainActivity.this);
 		
 	}

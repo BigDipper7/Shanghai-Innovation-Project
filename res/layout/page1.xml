@@ -20,7 +20,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@layout/page_liststyle_for_listview" >
+                android:background="@drawable/linearlayout_bg" >
 
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -77,10 +77,11 @@
                 android:id="@+id/listView1"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:footerDividersEnabled="false"
-                android:background="@layout/page_liststyle_for_listview"
-                android:divider="#000000"
-                android:dividerHeight="1dp" >
+                android:background="@drawable/linearlayout_bg"
+                android:divider="#bfbfbf"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false" >
+
             </ListView>
         </LinearLayout>
 
