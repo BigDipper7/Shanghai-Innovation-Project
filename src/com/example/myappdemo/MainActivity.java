@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -38,37 +37,39 @@ public class MainActivity extends Activity {
 		/*
 		 * initialize the page titles
 		 * */
-		String xmlTitle4 = "首页";
+		String xmlTitle1 = "首页";
 		String xmlTitle2 = "搜索";
-		String xmlTitle1 = "我的租房";
-		String xmlTitle3 = "更多";
-		titleList.add(xmlTitle4);
-		titleList.add(xmlTitle2);
+		String xmlTitle3 = "我的租房";
+		String xmlTitle4 = "更多";
 		titleList.add(xmlTitle1);
+		titleList.add(xmlTitle2);
 		titleList.add(xmlTitle3);
+		titleList.add(xmlTitle4);
 		
 		/*
 		 *  initialize the page view
 		 * */
 		LayoutInflater layoutInflater = LayoutInflater.from(MainActivity.this);
-		View page4 = layoutInflater.inflate(R.layout.page4, null);
-		View page2 = layoutInflater.inflate(R.layout.page2, null);
-		View page1 = layoutInflater.inflate(R.layout.page1, null);
+//		View page1 = layoutInflater.inflate(R.layout.page4, null);
+		View page1 = layoutInflater.inflate(R.layout.page_1, null);
+//		View page2 = layoutInflater.inflate(R.layout.page2, null);
+		View page2 = layoutInflater.inflate(R.layout.page_2, null);
+		View page3 = layoutInflater.inflate(R.layout.page1, null);
 //		View page3 = layoutInflater.inflate(R.layout.page3, null);
-		View page3 = layoutInflater.inflate(R.layout.page_4, null);
-		viewList.add(page4);
-		viewList.add(page2);
+		View page4 = layoutInflater.inflate(R.layout.page_4, null);
 		viewList.add(page1);
+		viewList.add(page2);
 		viewList.add(page3);
+		viewList.add(page4);
 			
 		/*
 		 *  initialize the views
 		 * */
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
-		listView = (ListView) page1.findViewById(R.id.listView1);
-		listView2 = (ListView) page2.findViewById(R.id.listView1);
+//		listView = (ListView) page1.findViewById(R.id.listView1);
+//		listView2 = (ListView) page2.findViewById(R.id.listView1);
 		listView3 = (ListView) page3.findViewById(R.id.listView1);
-		listView4 = (ListView) page4.findViewById(R.id.listView1);
+//		listView4 = (ListView) page4.findViewById(R.id.listView1);
 				
 		/*
 		 * initialize adapters
@@ -108,41 +109,48 @@ public class MainActivity extends Activity {
 				return super.getItemPosition(object);
 			}
 		};
-//		arrayAdapter = new ArrayAdapter<View>(MainActivity.this, android.R.layout.simple_expandable_list_item_1, MyUtils.getData(MainActivity.this));
 		simpleAdapter = new SimpleAdapter(MainActivity.this, MyUtils.getData(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
 		simpleAdapter2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page2_view_for_listview, new String[] {"txt1", "txt2", "txt3"}, new int[] {R.id.textView1, R.id.textView2, R.id.textView3});
 		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page1_view_for_listview, new String[] {"img", "txt", "txt2"}, new int[] {R.id.imageView1, R.id.textView1, R.id.textView2});
 		simpleAdapter4 = new SimpleAdapter(MainActivity.this, MyUtils.getData4(), R.layout.page4_view_for_listview, new String[] {"txt", "txt2"}, new int[] {R.id.textView1, R.id.textView2});
 		
 		/*
-		 * test
+		 * adapter -> view -> insert in linearlayout
 		 * 
 		 * */
-//		View  lay = LayoutInflater.from(MainActivity.this).inflate(R.layout.page_4, null);
-		LinearLayout ll = (LinearLayout) page3.findViewById(R.id.linearLayout1);
-		
+		LinearLayout ll1 = (LinearLayout) page1.findViewById(R.id.linearLayout1);
 		for(int i=0; i< simpleAdapter.getCount(); i++) {
-			View v = simpleAdapter.getView(i, null, ll);
-			Log.e("View v Innnnnnnnnn", "Initialize.............");
-			ll.addView(v);
+			View v = simpleAdapter.getView(i, null, ll1);
+//			v.setBackgroundColor(R.drawable.call_item_middle_n);
+//			Log.e("View v Innnnnnnnnn", "Initialize.............");
+			ll1.addView(v);
 		}
+		LinearLayout ll4 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
+		for(int i=0; i< simpleAdapter.getCount(); i++) {
+			View v = simpleAdapter.getView(i, null, ll4);
+//			v.setBackgroundColor(R.drawable.call_item_middle_n);
+//			Log.e("View v Innnnnnnnnn", "Initialize.............");
+			ll4.addView(v);
+		}
+		
+		
 		
 		/*
 		 *  set adapter
 		 * */
 		viewPager.setAdapter(pagerAdapter);
-		listView.setAdapter(simpleAdapter);
-		listView2.setAdapter(simpleAdapter2);
+//		listView.setAdapter(simpleAdapter);
+//		listView2.setAdapter(simpleAdapter2);
 //		listView3.setAdapter(simpleAdapter3);
-		listView4.setAdapter(simpleAdapter4);
+//		listView4.setAdapter(simpleAdapter4);
 
 		/*
 		 *  set list view height
 		 * */
-		MyUtils.setListViewHeightBasedOnChildren(listView, MainActivity.this);
-		MyUtils.setListViewHeightBasedOnChildren(listView2, MainActivity.this);
+//		MyUtils.setListViewHeightBasedOnChildren(listView, MainActivity.this);
+//		MyUtils.setListViewHeightBasedOnChildren(listView2, MainActivity.this);
 //		MyUtils.setListViewHeightBasedOnChildren(listView3, MainActivity.this);
-		MyUtils.setListViewHeightBasedOnChildren(listView4, MainActivity.this);
+//		MyUtils.setListViewHeightBasedOnChildren(listView4, MainActivity.this);
 		
 	}
 
