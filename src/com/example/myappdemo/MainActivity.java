@@ -50,17 +50,18 @@ public class MainActivity extends Activity {
 		 *  initialize the page view
 		 * */
 		LayoutInflater layoutInflater = LayoutInflater.from(MainActivity.this);
-//		View page1 = layoutInflater.inflate(R.layout.page4, null);
 		View page1 = layoutInflater.inflate(R.layout.page_1, null);
-//		View page2 = layoutInflater.inflate(R.layout.page2, null);
 		View page2 = layoutInflater.inflate(R.layout.page_2, null);
-		View page3 = layoutInflater.inflate(R.layout.page1, null);
-//		View page3 = layoutInflater.inflate(R.layout.page3, null);
+		View page3 = layoutInflater.inflate(R.layout.page_3, null);
 		View page4 = layoutInflater.inflate(R.layout.page_4, null);
 		viewList.add(page1);
 		viewList.add(page2);
 		viewList.add(page3);
 		viewList.add(page4);
+//		View page1 = layoutInflater.inflate(R.layout.page4, null);
+//		View page2 = layoutInflater.inflate(R.layout.page2, null);
+//		View page3 = layoutInflater.inflate(R.layout.page1, null);
+//		View page3 = layoutInflater.inflate(R.layout.page3, null
 			
 		/*
 		 *  initialize the views
@@ -68,7 +69,7 @@ public class MainActivity extends Activity {
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
 //		listView = (ListView) page1.findViewById(R.id.listView1);
 //		listView2 = (ListView) page2.findViewById(R.id.listView1);
-		listView3 = (ListView) page3.findViewById(R.id.listView1);
+//		listView3 = (ListView) page3.findViewById(R.id.listView1);
 //		listView4 = (ListView) page4.findViewById(R.id.listView1);
 				
 		/*

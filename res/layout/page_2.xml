@@ -26,17 +26,14 @@
             </EditText>
 
             <ImageView
+                android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="@dimen/activity_vertical_margin"
+                android:layout_gravity="center_vertical"
                 android:src="@drawable/txt_search_default" />
-        </LinearLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp" >
-        </FrameLayout>
+        </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -49,6 +46,11 @@
             android:layout_height="wrap_content"
             android:text="搜索选项"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp" >
+        </FrameLayout>
 
         <LinearLayout
             android:id="@+id/linearlayout1"
