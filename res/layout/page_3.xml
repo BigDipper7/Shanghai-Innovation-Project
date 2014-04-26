@@ -66,7 +66,7 @@
         </FrameLayout>
 
         <LinearLayout
-            android:id="@+id/linearlayout1"
+            android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/linearlayout_bg"
