@@ -34,7 +34,6 @@ public class MainActivity extends Activity {
 	}
 
 	private void init() {
-		
 		/*
 		 * initialize the page titles
 		 * */
@@ -117,27 +116,11 @@ public class MainActivity extends Activity {
 		 * adapter -> view -> insert in linearlayout
 		 * in the meantime  genItems for LinearLayout
 		 * */
-		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1);
-		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2);
-		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3);
-		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4);
-//		LinearLayout ll1 = (LinearLayout) page1.findViewById(R.id.linearLayout1);
-//		for(int i=0; i< simpleAdapter.getCount(); i++) {
-//			View v = simpleAdapter.getView(i, null, ll1);
-////			v.setBackgroundColor(R.drawable.call_item_middle_n);
-////			Log.e("View v Innnnnnnnnn", "Initialize.............");
-//			ll1.addView(v);
-//		}
-//		LinearLayout ll4 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
-//		for(int i=0; i< simpleAdapter.getCount(); i++) {
-//			View v = simpleAdapter.getView(i, null, ll4);
-////			v.setBackgroundColor(R.drawable.call_item_middle_n);
-////			Log.e("View v Innnnnnnnnn", "Initialize.............");
-//			ll4.addView(v);
-//		}
-		
-		
-		
+		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this);
+		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this);
+	
 		/*
 		 *  set adapter
 		 * */

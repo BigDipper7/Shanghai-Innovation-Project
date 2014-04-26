@@ -37,11 +37,12 @@ public final class R {
         public static final int ic_launcher=0x7f02000d;
         public static final int linearlayout_bg=0x7f02000e;
         public static final int profile_icon=0x7f02000f;
-        public static final int qzone_albumlist_icon_forward=0x7f020010;
-        public static final int qzone_albumlist_icon_forward_click=0x7f020011;
-        public static final int triangle=0x7f020012;
-        public static final int triangle_blue=0x7f020013;
-        public static final int txt_search_default=0x7f020014;
+        public static final int qav_video_header_animation=0x7f020010;
+        public static final int qzone_albumlist_icon_forward=0x7f020011;
+        public static final int qzone_albumlist_icon_forward_click=0x7f020012;
+        public static final int triangle=0x7f020013;
+        public static final int triangle_blue=0x7f020014;
+        public static final int txt_search_default=0x7f020015;
     }
     public static final class id {
         public static final int TextView01=0x7f080006;
