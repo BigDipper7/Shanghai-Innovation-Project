@@ -25,24 +25,26 @@ public final class R {
         public static final int aio_tips_arrow_white=0x7f020001;
         public static final int boss_unipay_arrow_right_normal=0x7f020002;
         public static final int boss_unipay_arrow_right_pressed=0x7f020003;
-        public static final int call_item_bottom_n=0x7f020004;
-        public static final int call_item_bottom_s=0x7f020005;
-        public static final int call_item_middle_n=0x7f020006;
-        public static final int call_item_middle_s=0x7f020007;
-        public static final int call_item_top_n=0x7f020008;
-        public static final int call_item_top_s=0x7f020009;
-        public static final int divider=0x7f02000a;
-        public static final int entrust_triangle=0x7f02000b;
-        public static final int home_divider=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int linearlayout_bg=0x7f02000e;
-        public static final int profile_icon=0x7f02000f;
-        public static final int qav_video_header_animation=0x7f020010;
-        public static final int qzone_albumlist_icon_forward=0x7f020011;
-        public static final int qzone_albumlist_icon_forward_click=0x7f020012;
-        public static final int triangle=0x7f020013;
-        public static final int triangle_blue=0x7f020014;
-        public static final int txt_search_default=0x7f020015;
+        public static final int btn_left_n=0x7f020004;
+        public static final int btn_left_s=0x7f020005;
+        public static final int call_item_bottom_n=0x7f020006;
+        public static final int call_item_bottom_s=0x7f020007;
+        public static final int call_item_middle_n=0x7f020008;
+        public static final int call_item_middle_s=0x7f020009;
+        public static final int call_item_top_n=0x7f02000a;
+        public static final int call_item_top_s=0x7f02000b;
+        public static final int divider=0x7f02000c;
+        public static final int entrust_triangle=0x7f02000d;
+        public static final int home_divider=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int linearlayout_bg=0x7f020010;
+        public static final int profile_icon=0x7f020011;
+        public static final int qav_video_header_animation=0x7f020012;
+        public static final int qzone_albumlist_icon_forward=0x7f020013;
+        public static final int qzone_albumlist_icon_forward_click=0x7f020014;
+        public static final int triangle=0x7f020015;
+        public static final int triangle_blue=0x7f020016;
+        public static final int txt_search_default=0x7f020017;
     }
     public static final class id {
         public static final int TextView01=0x7f080006;
@@ -78,6 +80,7 @@ public final class R {
         public static final int page_4=0x7f03000b;
         public static final int page_4_item_for_linearlayout=0x7f03000c;
         public static final int page_liststyle_for_listview=0x7f03000d;
+        public static final int titlebar=0x7f03000e;
     }
     public static final class menu {
         public static final int main=0x7f070000;
