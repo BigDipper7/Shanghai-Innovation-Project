@@ -1,4 +1,4 @@
-package com.example.myappdemo.Utils;
+package com.example.myappdemo.utils.view;
 
 import android.content.Context;
 import android.util.Log;

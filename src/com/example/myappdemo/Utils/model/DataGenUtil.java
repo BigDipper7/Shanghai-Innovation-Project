@@ -1,4 +1,4 @@
-package com.example.myappdemo.Utils;
+package com.example.myappdemo.utils.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,8 +12,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.example.myappdemo.R;
+import com.example.myappdemo.utils.DensityUtil;
 
-public class MyUtils {
+public class DataGenUtil {
 	/*
 	 * get the data while deal with page1_view_for_listviw.xml
 	 */

@@ -15,8 +15,8 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
-import com.example.myappdemo.Utils.GenerateXML;
-import com.example.myappdemo.Utils.MyUtils;
+import com.example.myappdemo.utils.model.DataGenUtil;
+import com.example.myappdemo.utils.view.GenerateXML;
 
 public class MainActivity extends Activity {
 	private List<String>  titleList = new ArrayList<String>();
@@ -108,10 +108,10 @@ public class MainActivity extends Activity {
 				return super.getItemPosition(object);
 			}
 		};
-		simpleAdapter1 = new SimpleAdapter(MainActivity.this, MyUtils.getData1(), R.layout.page_1_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
-		simpleAdapter2 = new SimpleAdapter(MainActivity.this, MyUtils.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
-		simpleAdapter3 = new SimpleAdapter(MainActivity.this, MyUtils.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
-		simpleAdapter4 = new SimpleAdapter(MainActivity.this, MyUtils.getData4(), R.layout.page_4_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
+		simpleAdapter1 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData1(), R.layout.page_1_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
+		simpleAdapter2 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
+		simpleAdapter3 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
+		simpleAdapter4 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData4(), R.layout.page_4_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
 		
 		/*
 		 * adapter -> view -> insert in linearlayout
