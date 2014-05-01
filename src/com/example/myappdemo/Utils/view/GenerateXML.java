@@ -7,6 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
 import com.example.myappdemo.R;
+import com.example.myappdemo.utils.controller.ItemOnClickListemerUtil;
 
 public class GenerateXML {
 	public static int genLinearLayoutItems(LinearLayout linearLayout, SimpleAdapter simpleAdapter, Context context) {
@@ -22,6 +23,9 @@ public class GenerateXML {
 			}else {
 				v.setBackgroundResource(R.drawable.call_item_middle_n);
 			}
+			
+			ItemOnClickListemerUtil.setOnClickListener(v, i);
+			
 			linearLayout.addView(v);
 		}
 		Log.e("GenXML-drawable", "context.getResources().getDrawable(R.drawable.qav_video_header_animation)");

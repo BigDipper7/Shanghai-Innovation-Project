@@ -50,7 +50,7 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f080006;
-        public static final int action_settings=0x7f080010;
+        public static final int action_settings=0x7f080020;
         public static final int button1=0x7f080007;
         public static final int button2=0x7f080008;
         public static final int button3=0x7f080009;
@@ -62,6 +62,22 @@ public final class R {
         public static final int imageView2=0x7f08000e;
         public static final int linearLayout1=0x7f08000d;
         public static final int pagertab=0x7f080001;
+        public static final int radioButton1=0x7f080010;
+        public static final int radioButton10=0x7f080019;
+        public static final int radioButton11=0x7f08001a;
+        public static final int radioButton12=0x7f08001b;
+        public static final int radioButton13=0x7f08001c;
+        public static final int radioButton14=0x7f08001d;
+        public static final int radioButton15=0x7f08001e;
+        public static final int radioButton16=0x7f08001f;
+        public static final int radioButton2=0x7f080011;
+        public static final int radioButton3=0x7f080012;
+        public static final int radioButton4=0x7f080013;
+        public static final int radioButton5=0x7f080014;
+        public static final int radioButton6=0x7f080015;
+        public static final int radioButton7=0x7f080016;
+        public static final int radioButton8=0x7f080017;
+        public static final int radioButton9=0x7f080018;
         public static final int textView1=0x7f080003;
         public static final int textView2=0x7f080004;
         public static final int textView3=0x7f080005;
@@ -78,12 +94,13 @@ public final class R {
         public static final int page_2=0x7f030007;
         public static final int page_2_dialog=0x7f030008;
         public static final int page_2_item_for_linearlayout=0x7f030009;
-        public static final int page_3=0x7f03000a;
-        public static final int page_3_item_for_linearlayout=0x7f03000b;
-        public static final int page_4=0x7f03000c;
-        public static final int page_4_item_for_linearlayout=0x7f03000d;
-        public static final int page_liststyle_for_listview=0x7f03000e;
-        public static final int titlebar=0x7f03000f;
+        public static final int page_2_select_dialog_1=0x7f03000a;
+        public static final int page_3=0x7f03000b;
+        public static final int page_3_item_for_linearlayout=0x7f03000c;
+        public static final int page_4=0x7f03000d;
+        public static final int page_4_item_for_linearlayout=0x7f03000e;
+        public static final int page_liststyle_for_listview=0x7f03000f;
+        public static final int titlebar=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f070000;
