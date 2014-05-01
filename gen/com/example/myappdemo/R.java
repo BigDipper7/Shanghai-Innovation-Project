@@ -76,13 +76,14 @@ public final class R {
         public static final int page_1=0x7f030005;
         public static final int page_1_item_for_linearlayout=0x7f030006;
         public static final int page_2=0x7f030007;
-        public static final int page_2_item_for_linearlayout=0x7f030008;
-        public static final int page_3=0x7f030009;
-        public static final int page_3_item_for_linearlayout=0x7f03000a;
-        public static final int page_4=0x7f03000b;
-        public static final int page_4_item_for_linearlayout=0x7f03000c;
-        public static final int page_liststyle_for_listview=0x7f03000d;
-        public static final int titlebar=0x7f03000e;
+        public static final int page_2_dialog=0x7f030008;
+        public static final int page_2_item_for_linearlayout=0x7f030009;
+        public static final int page_3=0x7f03000a;
+        public static final int page_3_item_for_linearlayout=0x7f03000b;
+        public static final int page_4=0x7f03000c;
+        public static final int page_4_item_for_linearlayout=0x7f03000d;
+        public static final int page_liststyle_for_listview=0x7f03000e;
+        public static final int titlebar=0x7f03000f;
     }
     public static final class menu {
         public static final int main=0x7f070000;
