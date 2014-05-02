@@ -35,11 +35,15 @@ public class ItemOnClickListemerUtil {
 				}
 				
 				final View dialogContent = LayoutInflater.from(context).inflate(resId, null);
+				final Dialog alertDialog = new AlertDialog.Builder(context).setView(dialogContent).create();
+				alertDialog.show();
+				//监听radiogroup 的按键监听
 				RadioGroup group = (RadioGroup) dialogContent.findViewById(R.id.radioGroup);
 				group.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 					
 					@Override
 					public void onCheckedChanged(RadioGroup arg0, int arg1) {
+						alertDialog.dismiss();
 						//获取变更后的选中项的ID
 						int radioButtonId = arg0.getCheckedRadioButtonId();
 						//根据ID获取RadioButton的实例
@@ -51,8 +55,6 @@ public class ItemOnClickListemerUtil {
 						tv.setText(str);
 					}
 				});
-				Dialog alertDialog = new AlertDialog.Builder(context).setView(dialogContent).create();
-				alertDialog.show();
 				
 //				CustomDialog customDialog = new CustomDialog(context, resId, R.style.Page2CustomDialog, new OnCusDiaItmClickListener() {
 //					
