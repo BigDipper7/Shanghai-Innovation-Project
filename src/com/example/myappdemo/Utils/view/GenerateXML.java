@@ -24,7 +24,7 @@ public class GenerateXML {
 				v.setBackgroundResource(R.drawable.call_item_middle_n);
 			}
 			
-			ItemOnClickListemerUtil.setOnClickListener(v, i);
+			ItemOnClickListemerUtil.setOnClickListener(context, v, i);
 			
 			linearLayout.addView(v);
 		}
