@@ -44,9 +44,12 @@ public final class R {
         public static final int qav_video_header_animation=0x7f020014;
         public static final int qzone_albumlist_icon_forward=0x7f020015;
         public static final int qzone_albumlist_icon_forward_click=0x7f020016;
-        public static final int triangle=0x7f020017;
-        public static final int triangle_blue=0x7f020018;
-        public static final int txt_search_default=0x7f020019;
+        public static final int selector_item_bg_bottom=0x7f020017;
+        public static final int selector_item_bg_middle=0x7f020018;
+        public static final int seletor_item_bg_top=0x7f020019;
+        public static final int triangle=0x7f02001a;
+        public static final int triangle_blue=0x7f02001b;
+        public static final int txt_search_default=0x7f02001c;
     }
     public static final class id {
         public static final int TextView01=0x7f080006;
@@ -97,12 +100,13 @@ public final class R {
         public static final int page_2_dialog=0x7f030008;
         public static final int page_2_item_for_linearlayout=0x7f030009;
         public static final int page_2_select_dialog_1=0x7f03000a;
-        public static final int page_3=0x7f03000b;
-        public static final int page_3_item_for_linearlayout=0x7f03000c;
-        public static final int page_4=0x7f03000d;
-        public static final int page_4_item_for_linearlayout=0x7f03000e;
-        public static final int page_liststyle_for_listview=0x7f03000f;
-        public static final int titlebar=0x7f030010;
+        public static final int page_2_select_dialog_2=0x7f03000b;
+        public static final int page_3=0x7f03000c;
+        public static final int page_3_item_for_linearlayout=0x7f03000d;
+        public static final int page_4=0x7f03000e;
+        public static final int page_4_item_for_linearlayout=0x7f03000f;
+        public static final int page_liststyle_for_listview=0x7f030010;
+        public static final int titlebar=0x7f030011;
     }
     public static final class menu {
         public static final int main=0x7f070000;

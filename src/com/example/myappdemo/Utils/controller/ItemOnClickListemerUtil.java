@@ -15,7 +15,14 @@ import android.widget.TextView;
 import com.example.myappdemo.R;
 
 public class ItemOnClickListemerUtil {
-	public static void setOnClickListener( final Context context, final View view,  final int i) {
+	
+	/**
+	 * view 的onClick监听函数
+	 * @param context 
+	 * @param view 最后监听的子项
+	 * @param i 最终的对应子项的序列号
+	 */
+	public static void setPage2OnClickListener( final Context context, final View view,  final int i) {
 		view.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -25,7 +32,7 @@ public class ItemOnClickListemerUtil {
 				// initial resId
 				switch (i) {
 				case 0: resId = R.layout.page_2_select_dialog_1; break;
-				case 1: break;
+				case 1: resId = R.layout.page_2_select_dialog_2; break;
 				case 2: break;
 				case 3: break;
 				case 4: break;
