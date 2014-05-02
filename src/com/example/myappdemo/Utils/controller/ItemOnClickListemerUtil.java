@@ -17,7 +17,7 @@ import com.example.myappdemo.R;
 public class ItemOnClickListemerUtil {
 	
 	/**
-	 * view 的onClick监听函数
+	 * view 的onClick监听函数 是第二个界面page2的linearlayout子项监听函数
 	 * @param context 
 	 * @param view 最后监听的子项
 	 * @param i 最终的对应子项的序列号
@@ -33,11 +33,11 @@ public class ItemOnClickListemerUtil {
 				switch (i) {
 				case 0: resId = R.layout.page_2_select_dialog_1; break;
 				case 1: resId = R.layout.page_2_select_dialog_2; break;
-				case 2: break;
-				case 3: break;
-				case 4: break;
-				case 5: break;
-				case 6: break;
+				case 2: resId = R.layout.page_2_select_dialog_3; break;
+				case 3: resId = R.layout.page_2_select_dialog_4; break;
+				case 4: resId = R.layout.page_2_select_dialog_5; break;
+				case 5: resId = R.layout.page_2_select_dialog_6; break;
+				case 6: resId = R.layout.page_2_select_dialog_7; break;
 				default: break;
 				}
 				
@@ -69,11 +69,12 @@ public class ItemOnClickListemerUtil {
 //					public void CusDiaItmClickListener(String string) {
 //						//不清楚是V还是View
 //						TextView tv = (TextView) view.findViewById(R.id.textView2);
+//						Log.e("now -->in", "bull->>>");
 //						tv.setText(string);
 //					}
 //				});
 //				Log.e("--->onclicklistener", ""+i);
-//				customDialog.setCanceledOnTouchOutside(true);
+////				customDialog.setCanceledOnTouchOutside(true);
 //				customDialog.show();
 
 

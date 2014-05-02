@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不限" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13号线" />
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22号线" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    
+
+</ScrollView>

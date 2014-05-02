@@ -52,18 +52,23 @@ public class CustomDialog extends Dialog{
 		this.resLayout = resLayout;
 		this.theme = theme;
 		this.listener = listener;
+		Log.e("CustomDialog -- Constructor", "Construct init");
 	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.setContentView(resLayout);
+		Log.e("CustomDialog---OnCreate", "OnCreate init");
 		page = LayoutInflater.from(context).inflate(resLayout, null);
+		Log.e("CustomDialog---RadioPage", ""+page);
 		radioGroup = (RadioGroup) page.findViewById(R.id.radioGroup);
+		Log.e("CustomDialog---RedioGroup", ""+radioGroup);
 		radioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			
 			@Override
 			public void onCheckedChanged(RadioGroup group, int checkedId) {
+				dismiss();
 				//获取变更后的选中项的ID
 				int radioButtonId = group.getCheckedRadioButtonId();
 				//根据ID获取RadioButton的实例

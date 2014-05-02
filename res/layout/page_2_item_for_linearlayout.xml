@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="110dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:text="Medium Text"
@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:text="Small Text"

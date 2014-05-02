@@ -13,8 +13,7 @@ public class GenerateXML {
 	public static int genLinearLayoutItems(LinearLayout linearLayout, SimpleAdapter simpleAdapter, Context context, final int pageNum) {
 		int count = simpleAdapter.getCount();
 		for (int i = 0; i < count; i++) {
-			View v = simpleAdapter.getView(i, null, linearLayout);// v
-																	// 是simpleadapter产生的一个linearlayout的子项
+			View v = simpleAdapter.getView(i, null, linearLayout);// v 是simpleadapter产生的一个linearlayout的子项
 			// set different bg resource
 			if (i == 0) {
 				v.setBackgroundResource(R.drawable.seletor_item_bg_top);
