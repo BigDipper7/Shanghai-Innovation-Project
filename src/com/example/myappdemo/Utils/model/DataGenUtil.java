@@ -111,31 +111,31 @@ public class DataGenUtil {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
 		Map<String, Object> item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.hot_activity);
 		item1.put("txt", "热门活动");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.my_xf);
 		item1.put("txt", "我的新房");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.my_esf);
 		item1.put("txt", "我的二手房");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.my_zf);
 		item1.put("txt", "我的租房");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.zfhjq_n);
 		item1.put("txt", "即时通讯");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
@@ -147,43 +147,43 @@ public class DataGenUtil {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 
 		Map<String, Object> item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_city);
 		item1.put("txt", "切换城市");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_flow);
 		item1.put("txt", "图片质量设置");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_chatsetting);
 		item1.put("txt", "即时通讯设置");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_feedback);
 		item1.put("txt", "用户反馈");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_help);
 		item1.put("txt", "使用帮助");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_about);
 		item1.put("txt", "关于我们");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
 
 		item1 = new HashMap<String, Object>();
-		item1.put("img", R.drawable.profile_icon);
+		item1.put("img", R.drawable.more_zixun);
 		item1.put("txt", "免责声明");
 		item1.put("imgEnd", R.drawable.aio_tips_arrow_gray);
 		data.add(item1);
