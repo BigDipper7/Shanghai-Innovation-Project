@@ -3,6 +3,7 @@ package com.example.myappdemo.Utils.controller;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import com.example.myappdemo.R;
+import com.example.myappdemo.hehe;
 
 public class ItemOnClickListemerUtil {
 	
@@ -81,7 +83,45 @@ public class ItemOnClickListemerUtil {
 			}
 		});
 	}
-	
-	
+	public static void setPage3OnClickListener( final Context context, final View view,  final int i) {
+		view.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+//				final View t_view = view;
+				int resId = 0;
+				// initial resId
+				switch (i) {
+				case 0:{
+					Intent intent=new Intent(context,hehe.class);
+					context.startActivity(intent);
+					break;
+					}
+				case 1: {
+					Intent intent=new Intent(context,hehe.class);
+					context.startActivity(intent);
+					break;
+					}			
+				case 2: {
+					Intent intent=new Intent(context,hehe.class);
+					context.startActivity(intent);
+					break;
+					}
+				case 3:{
+					Intent intent=new Intent(context,hehe.class);
+					context.startActivity(intent);
+					break;
+					}	
+				case 4:{
+					Intent intent=new Intent(context,hehe.class);
+					context.startActivity(intent);
+					break;
+					}	
+				default: break;
+				}
+				
+			}
+		});
+		}
 	
 }

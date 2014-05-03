@@ -30,6 +30,7 @@ public class GenerateXML {
 				ItemOnClickListemerUtil.setPage2OnClickListener(context, v, i);
 				break;
 			case 3:
+				ItemOnClickListemerUtil.setPage3OnClickListener(context, v, i);
 				break;
 			case 4:
 				break;

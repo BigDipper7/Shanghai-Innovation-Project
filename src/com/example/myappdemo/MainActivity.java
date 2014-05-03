@@ -22,6 +22,7 @@ import com.example.myappdemo.Utils.model.DataGenUtil;
 import com.example.myappdemo.Utils.view.GenerateXML;
 
 public class MainActivity extends Activity {
+	public String user;
 	private List<String>  titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
@@ -65,8 +66,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Log.i("heloo", "×¢Ïú");
-				Intent intent=new Intent(MainActivity.this, Login.class);
-				startActivity(intent);
+				user="null";
 			}
 		});
 		
