@@ -61,11 +61,12 @@ public final class R {
         public static final int selector_item_bg_bottom=0x7f020025;
         public static final int selector_item_bg_middle=0x7f020026;
         public static final int seletor_item_bg_top=0x7f020027;
-        public static final int titlebar_bg=0x7f020028;
-        public static final int triangle=0x7f020029;
-        public static final int triangle_blue=0x7f02002a;
-        public static final int txt_search_default=0x7f02002b;
-        public static final int zfhjq_n=0x7f02002c;
+        public static final int titlebar_back_btn_selector=0x7f020028;
+        public static final int titlebar_bg=0x7f020029;
+        public static final int triangle=0x7f02002a;
+        public static final int triangle_blue=0x7f02002b;
+        public static final int txt_search_default=0x7f02002c;
+        public static final int zfhjq_n=0x7f02002d;
     }
     public static final class id {
         public static final int action_settings=0x7f080022;
@@ -174,10 +175,10 @@ public final class R {
         public static final int AppTheme=0x7f060001;
         /**  Page2 Dialog Theme- radio group  Not use now
          */
-        public static final int Page2CustomDialog=0x7f060002;
-        public static final int custom_title=0x7f060004;
+        public static final int Page2CustomDialog=0x7f060004;
+        public static final int custom_title=0x7f060003;
         /**  TitleBar theme 
          */
-        public static final int custom_window_title_background=0x7f060003;
+        public static final int custom_window_title_background=0x7f060002;
     }
 }

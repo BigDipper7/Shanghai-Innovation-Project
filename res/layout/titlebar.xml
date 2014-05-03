@@ -4,13 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
+    <FrameLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="35dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/btn_left_n"
-        android:text="返回"
+        android:text=" 返回"
         android:textColor="#FFFFFF" />
 
     <FrameLayout
