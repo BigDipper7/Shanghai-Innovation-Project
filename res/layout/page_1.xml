@@ -9,13 +9,6 @@
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin" >
 
-        <TextView
-            android:id="@+id/TextView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="工具"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="10dp" >
@@ -34,6 +27,7 @@
                     android:id="@+id/button1"
                     android:layout_width="97dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/page1_top_btn_selector"
                     android:text="新房" />
 
                 <FrameLayout
@@ -46,6 +40,7 @@
                     android:id="@+id/button2"
                     android:layout_width="97dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/page1_top_btn_selector"
                     android:text="二手房" />
 
                 <FrameLayout
@@ -58,6 +53,7 @@
                     android:id="@+id/button3"
                     android:layout_width="97dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/page1_top_btn_selector"
                     android:text="租房" />
             </LinearLayout>
 
@@ -69,6 +65,7 @@
                     android:id="@+id/button4"
                     android:layout_width="97dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/page1_top_btn_selector"
                     android:text="周边房价" />
 
                 <FrameLayout
@@ -81,6 +78,7 @@
                     android:id="@+id/button5"
                     android:layout_width="97dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/page1_top_btn_selector"
                     android:text="我要卖房" />
 
                 <FrameLayout
@@ -93,6 +91,7 @@
                     android:id="@+id/button6"
                     android:layout_width="97dp"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/page1_top_btn_selector"
                     android:text="我要出租" />
             </LinearLayout>
         </LinearLayout>

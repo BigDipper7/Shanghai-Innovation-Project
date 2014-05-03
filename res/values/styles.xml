@@ -16,13 +16,23 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-
-    <!-- Page2 Dialog Theme- radio group  -->
+    
+    <!-- TitleBar theme -->
+    <style name="custom_window_title_background">
+        <item name="android:background">@drawable/titlebar_bg</item>
+    </style>
+    <style name="custom_title" parent="android:Theme.Light" > 
+        <item name="android:windowTitleSize">50dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/custom_window_title_background</item>
+    </style>
+    
+    <!-- Page2 Dialog Theme- radio group  Not use now-->
     <style name="Page2CustomDialog" parent="@android:style/Theme.Dialog">  
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item> 
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>  
+
     
 </resources>

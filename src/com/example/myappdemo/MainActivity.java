@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
@@ -23,6 +26,7 @@ public class MainActivity extends Activity {
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
 	private LinearLayout ll1, ll2, ll3, ll4;
+	private Button page1Btn_11, page1Btn_12, page1Btn_13, page1Btn_21, page1Btn_22, page1Btn_23;
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
 	private SimpleAdapter simpleAdapter1, simpleAdapter2, simpleAdapter3, simpleAdapter4;
 	
@@ -68,7 +72,17 @@ public class MainActivity extends Activity {
 		ll2 = (LinearLayout) page2.findViewById(R.id.linearLayout1);
 		ll3 = (LinearLayout) page3.findViewById(R.id.linearLayout1);
 		ll4 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
-		
+		/*
+		 * initialize page1 buttons
+		 * */
+		page1Btn_11 = (Button) page1.findViewById(R.id.button1); 
+		page1Btn_11.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this, XinFangActivity.class));
+			}
+		});
 				
 		/*
 		 * initialize adapters

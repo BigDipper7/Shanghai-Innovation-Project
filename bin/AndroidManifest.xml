@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.myappdemo.XinFangActivity"
+            android:label="@string/title_activity_xin_fang"
+            android:theme="@style/custom_title" >"
+        </activity>
     </application>
 
 </manifest>
