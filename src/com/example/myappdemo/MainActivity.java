@@ -83,6 +83,22 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(MainActivity.this, XinFangActivity.class));
 			}
 		});
+		page1Btn_12 = (Button) page1.findViewById(R.id.button2); 
+		page1Btn_12.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this, ErShouFangActivity.class));
+			}
+		});
+		page1Btn_13 = (Button) page1.findViewById(R.id.button3); 
+		page1Btn_13.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this, ZuFangActivity.class));
+			}
+		});
 				
 		/*
 		 * initialize adapters

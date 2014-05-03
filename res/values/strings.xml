@@ -8,5 +8,7 @@
     <string name="title_activity_xin_fang">XinFangActivity</string>
     <string name="title_activity_main1">Main1Activity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_er_shou_fang">ErShouFangActivity</string>
+    <string name="title_activity_zu_fang">ZuFangActivity</string>
 
 </resources>

@@ -25,7 +25,18 @@
         <activity
             android:name="com.example.myappdemo.XinFangActivity"
             android:label="@string/title_activity_xin_fang"
-            android:theme="@style/custom_title" >"
+            android:theme="@style/custom_title" >
+"
+        </activity>
+        <activity
+            android:name="com.example.myappdemo.ErShouFangActivity"
+            android:label="@string/title_activity_er_shou_fang"
+            android:theme="@style/custom_title" >
+        </activity>
+        <activity
+            android:name="com.example.myappdemo.ZuFangActivity"
+            android:label="@string/title_activity_zu_fang"
+            android:theme="@style/custom_title" >
         </activity>
     </application>
 
