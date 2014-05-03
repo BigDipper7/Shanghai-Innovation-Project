@@ -1,4 +1,4 @@
-package com.example.myappdemo.utils.controller;
+package com.example.myappdemo.Utils.controller;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

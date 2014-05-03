@@ -1,4 +1,4 @@
-package com.example.myappdemo.utils.view;
+package com.example.myappdemo.Utils.view;
 
 import android.app.Dialog;
 import android.content.Context;

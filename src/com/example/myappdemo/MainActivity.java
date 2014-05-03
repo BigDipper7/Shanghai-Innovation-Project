@@ -4,19 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
-import com.example.myappdemo.utils.model.DataGenUtil;
-import com.example.myappdemo.utils.view.GenerateXML;
+import com.example.myappdemo.Utils.model.DataGenUtil;
+import com.example.myappdemo.Utils.view.GenerateXML;
 
 public class MainActivity extends Activity {
 	private List<String>  titleList = new ArrayList<String>();
@@ -55,6 +58,18 @@ public class MainActivity extends Activity {
 		View page2 = layoutInflater.inflate(R.layout.page_2, null);
 		View page3 = layoutInflater.inflate(R.layout.page_3, null);
 		View page4 = layoutInflater.inflate(R.layout.page_4, null);
+		
+		Button but1=(Button) page4.findViewById(R.id.button1);
+		but1.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Log.i("heloo", "×¢Ïú");
+				Intent intent=new Intent(MainActivity.this, Login.class);
+				startActivity(intent);
+			}
+		});
+		
 		viewList.add(page1);
 		viewList.add(page2);
 		viewList.add(page3);

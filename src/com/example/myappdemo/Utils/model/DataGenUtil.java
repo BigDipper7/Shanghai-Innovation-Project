@@ -1,4 +1,4 @@
-package com.example.myappdemo.utils.model;
+package com.example.myappdemo.Utils.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.example.myappdemo.R;
-import com.example.myappdemo.utils.DensityUtil;
+import com.example.myappdemo.Utils.DensityUtil;
 
 public class DataGenUtil {
 	/*

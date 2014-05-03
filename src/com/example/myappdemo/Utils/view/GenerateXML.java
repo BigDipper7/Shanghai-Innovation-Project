@@ -1,4 +1,4 @@
-package com.example.myappdemo.utils.view;
+package com.example.myappdemo.Utils.view;
 
 import android.content.Context;
 import android.util.Log;
@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
 import com.example.myappdemo.R;
-import com.example.myappdemo.utils.controller.ItemOnClickListemerUtil;
+import com.example.myappdemo.Utils.controller.ItemOnClickListemerUtil;
 
 public class GenerateXML {
 	public static int genLinearLayoutItems(LinearLayout linearLayout, SimpleAdapter simpleAdapter, Context context, final int pageNum) {
