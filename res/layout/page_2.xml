@@ -13,6 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/linearlayout_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:orientation="horizontal" >
 
             <EditText
@@ -20,10 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:ems="10" >
-
-                <requestFocus />
-            </EditText>
+                android:ems="10" />
 
             <FrameLayout
                 android:layout_width="10dp"
@@ -37,7 +36,6 @@
                 android:layout_height="33dp"
                 android:background="@drawable/btn_search_n"
                 android:text="" />
-
         </LinearLayout>
 
         <FrameLayout
@@ -63,9 +61,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/linearlayout_bg"
             android:orientation="vertical" >
-
         </LinearLayout>
-
     </LinearLayout>
 
 </ScrollView>
