@@ -132,10 +132,10 @@ public class MainActivity extends Activity {
 		 * adapter -> view -> insert in linearlayout
 		 * in the meantime  genItems for LinearLayout
 		 * */
-		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this, 1);
-		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2, MainActivity.this, 2);
-		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this, 3);
-		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this, 4);
+		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this, 1,user);
+		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2, MainActivity.this, 2,user);
+		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this, 3,user);
+		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this, 4,user);
 	
 		/*
 		 *  set adapter

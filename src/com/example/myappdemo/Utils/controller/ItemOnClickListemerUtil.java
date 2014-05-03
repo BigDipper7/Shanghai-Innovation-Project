@@ -13,6 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
+import com.example.myappdemo.MainActivity;
 import com.example.myappdemo.R;
 import com.example.myappdemo.hehe;
 
@@ -83,7 +84,7 @@ public class ItemOnClickListemerUtil {
 			}
 		});
 	}
-	public static void setPage3OnClickListener( final Context context, final View view,  final int i) {
+	public static void setPage3OnClickListener( final Context context, final View view,  final int i,final String user) {
 		view.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -94,26 +95,31 @@ public class ItemOnClickListemerUtil {
 				switch (i) {
 				case 0:{
 					Intent intent=new Intent(context,hehe.class);
+					intent.putExtra("user", user);
 					context.startActivity(intent);
 					break;
 					}
 				case 1: {
 					Intent intent=new Intent(context,hehe.class);
+					intent.putExtra("user", user);
 					context.startActivity(intent);
 					break;
 					}			
 				case 2: {
 					Intent intent=new Intent(context,hehe.class);
+					intent.putExtra("user", user);
 					context.startActivity(intent);
 					break;
 					}
 				case 3:{
 					Intent intent=new Intent(context,hehe.class);
+					intent.putExtra("user", user);
 					context.startActivity(intent);
 					break;
 					}	
 				case 4:{
 					Intent intent=new Intent(context,hehe.class);
+					intent.putExtra("user", user);
 					context.startActivity(intent);
 					break;
 					}	
