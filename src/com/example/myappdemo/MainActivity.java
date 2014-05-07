@@ -72,10 +72,20 @@ public class MainActivity extends Activity {
 		ll2 = (LinearLayout) page2.findViewById(R.id.linearLayout1);
 		ll3 = (LinearLayout) page3.findViewById(R.id.linearLayout1);
 		ll4 = (LinearLayout) page4.findViewById(R.id.linearLayout1);
+		
 		/*
 		 * initialize page1 buttons
 		 * */
 		page1Btn_11 = (Button) page1.findViewById(R.id.button1); 
+		page1Btn_12 = (Button) page1.findViewById(R.id.button2); 
+		page1Btn_13 = (Button) page1.findViewById(R.id.button3); 
+		page1Btn_21 = (Button) page1.findViewById(R.id.button4); 
+		page1Btn_22 = (Button) page1.findViewById(R.id.button5); 
+		page1Btn_23 = (Button) page1.findViewById(R.id.button6); 
+		
+		/*
+		 * initialize page1 buttons OnClickListener --->  go to different activities
+		 * */
 		page1Btn_11.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -83,7 +93,6 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(MainActivity.this, XinFangActivity.class));
 			}
 		});
-		page1Btn_12 = (Button) page1.findViewById(R.id.button2); 
 		page1Btn_12.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -91,12 +100,32 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(MainActivity.this, ErShouFangActivity.class));
 			}
 		});
-		page1Btn_13 = (Button) page1.findViewById(R.id.button3); 
 		page1Btn_13.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				startActivity(new Intent(MainActivity.this, ZuFangActivity.class));
+			}
+		});
+		page1Btn_21.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this, ZhouBianFangJiaActivity.class));
+			}
+		});
+		page1Btn_22.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this, WoYaoMaiFangActivity.class));
+			}
+		});
+		page1Btn_23.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this, WoYaoChuZuActivity.class));
 			}
 		});
 				

@@ -28,7 +28,6 @@ public class ErShouFangActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-//				arg0.setBackgroundResource(R.drawable.btn_left_s);
 				finish();
 			}
 		});

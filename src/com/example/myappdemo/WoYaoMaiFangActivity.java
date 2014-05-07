@@ -1,23 +1,24 @@
 package com.example.myappdemo;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ZuFangActivity extends Activity {
-	private Button titleBarBack_btn;
+public class WoYaoMaiFangActivity extends Activity {
+
 	private TextView titleBarTitle_tv;
+	private View titleBarBack_btn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        setContentView(R.layout.activity_xin_fang);
+		setContentView(R.layout.activity_wo_mai_fang);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.titlebar);
         
         /*
@@ -32,13 +33,13 @@ public class ZuFangActivity extends Activity {
 			}
 		});
         titleBarTitle_tv = (TextView) findViewById(R.id.textView1);
-        titleBarTitle_tv.setText("租房");
+        titleBarTitle_tv.setText("我要卖房");
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.zu_fang, menu);
+		getMenuInflater().inflate(R.menu.wo_yao_sell, menu);
 		return true;
 	}
 

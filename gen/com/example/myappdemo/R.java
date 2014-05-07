@@ -108,38 +108,45 @@ public final class R {
     public static final class layout {
         public static final int activity_er_shou_fang=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int activity_xin_fang=0x7f030002;
-        public static final int activity_zu_fang=0x7f030003;
-        public static final int divider_for_linearlayout=0x7f030004;
-        public static final int fragment_main1_dummy=0x7f030005;
-        public static final int page1_view_for_listview=0x7f030006;
-        public static final int page2_view_for_listview=0x7f030007;
-        public static final int page4_view_for_listview=0x7f030008;
-        public static final int page_1=0x7f030009;
-        public static final int page_1_item_for_linearlayout=0x7f03000a;
-        public static final int page_2=0x7f03000b;
-        public static final int page_2_dialog=0x7f03000c;
-        public static final int page_2_item_for_linearlayout=0x7f03000d;
-        public static final int page_2_select_dialog_1=0x7f03000e;
-        public static final int page_2_select_dialog_2=0x7f03000f;
-        public static final int page_2_select_dialog_3=0x7f030010;
-        public static final int page_2_select_dialog_4=0x7f030011;
-        public static final int page_2_select_dialog_5=0x7f030012;
-        public static final int page_2_select_dialog_6=0x7f030013;
-        public static final int page_2_select_dialog_7=0x7f030014;
-        public static final int page_3=0x7f030015;
-        public static final int page_3_item_for_linearlayout=0x7f030016;
-        public static final int page_4=0x7f030017;
-        public static final int page_4_item_for_linearlayout=0x7f030018;
-        public static final int page_liststyle_for_listview=0x7f030019;
-        public static final int titlebar=0x7f03001a;
+        public static final int activity_wo_mai_fang=0x7f030002;
+        public static final int activity_wo_yao_chu_zu=0x7f030003;
+        public static final int activity_xin_fang=0x7f030004;
+        public static final int activity_zhou_bian_fang_jia=0x7f030005;
+        public static final int activity_zu_fang=0x7f030006;
+        public static final int divider_for_linearlayout=0x7f030007;
+        public static final int fragment_main1_dummy=0x7f030008;
+        public static final int page1_view_for_listview=0x7f030009;
+        public static final int page2_view_for_listview=0x7f03000a;
+        public static final int page4_view_for_listview=0x7f03000b;
+        public static final int page_1=0x7f03000c;
+        public static final int page_1_button13_item_for_linearlayout=0x7f03000d;
+        public static final int page_1_item_for_linearlayout=0x7f03000e;
+        public static final int page_2=0x7f03000f;
+        public static final int page_2_dialog=0x7f030010;
+        public static final int page_2_item_for_linearlayout=0x7f030011;
+        public static final int page_2_select_dialog_1=0x7f030012;
+        public static final int page_2_select_dialog_2=0x7f030013;
+        public static final int page_2_select_dialog_3=0x7f030014;
+        public static final int page_2_select_dialog_4=0x7f030015;
+        public static final int page_2_select_dialog_5=0x7f030016;
+        public static final int page_2_select_dialog_6=0x7f030017;
+        public static final int page_2_select_dialog_7=0x7f030018;
+        public static final int page_3=0x7f030019;
+        public static final int page_3_item_for_linearlayout=0x7f03001a;
+        public static final int page_4=0x7f03001b;
+        public static final int page_4_item_for_linearlayout=0x7f03001c;
+        public static final int page_liststyle_for_listview=0x7f03001d;
+        public static final int titlebar=0x7f03001e;
     }
     public static final class menu {
         public static final int er_shou_fang=0x7f070000;
         public static final int main=0x7f070001;
         public static final int main1=0x7f070002;
-        public static final int xin_fang=0x7f070003;
-        public static final int zu_fang=0x7f070004;
+        public static final int wo_yao_buy=0x7f070003;
+        public static final int wo_yao_sell=0x7f070004;
+        public static final int xin_fang=0x7f070005;
+        public static final int zhou_bian_fang_jia=0x7f070006;
+        public static final int zu_fang=0x7f070007;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -148,7 +155,10 @@ public final class R {
         public static final int this_is_profile_icon_=0x7f050002;
         public static final int title_activity_er_shou_fang=0x7f050007;
         public static final int title_activity_main1=0x7f050005;
+        public static final int title_activity_wo_yao_buy=0x7f05000b;
+        public static final int title_activity_wo_yao_sell=0x7f05000a;
         public static final int title_activity_xin_fang=0x7f050004;
+        public static final int title_activity_zhou_bian_fang_jia=0x7f050009;
         public static final int title_activity_zu_fang=0x7f050008;
         public static final int user_name_=0x7f050003;
     }
