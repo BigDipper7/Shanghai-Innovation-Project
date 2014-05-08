@@ -33,6 +33,10 @@ public class GenerateXML {
 				break;
 			case 4:
 				break;
+			case 113://page1-->button13-->linearlayout's item
+				ItemOnClickListemerUtil.setPage1Button13OnClickListener(context, v);
+				break;
+			
 			default:
 				break;
 			}

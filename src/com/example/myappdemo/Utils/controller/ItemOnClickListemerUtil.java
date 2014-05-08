@@ -3,6 +3,7 @@ package com.example.myappdemo.utils.controller;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,8 +14,25 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import com.example.myappdemo.R;
+import com.example.myappdemo.ZuFangActivityDetails;
 
 public class ItemOnClickListemerUtil {
+	
+	/**
+	 * view 的onClick监听函数 是第一个界面page1的Button13的跳转界面ZuFangActivity
+	 * 
+	 */
+	public static void setPage1Button13OnClickListener(final Context context, View view) {
+		view.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				context.startActivity(new Intent(context, ZuFangActivityDetails.class));
+			}
+		});
+	}
+
+	
 	
 	/**
 	 * view 的onClick监听函数 是第二个界面page2的linearlayout子项监听函数
@@ -81,7 +99,6 @@ public class ItemOnClickListemerUtil {
 			}
 		});
 	}
-	
 	
 	
 }

@@ -14,7 +14,7 @@ import android.widget.ListView;
 import com.example.myappdemo.R;
 import com.example.myappdemo.utils.DensityUtil;
 
-public class DataGenUtil {
+public class DataGenUtil4ActivMain {
 	/*
 	 * get the data while deal with page1_view_for_listviw.xml
 	 */

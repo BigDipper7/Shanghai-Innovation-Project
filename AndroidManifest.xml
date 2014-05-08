@@ -52,6 +52,10 @@
             android:label="@string/title_activity_wo_yao_buy"
             android:theme="@style/custom_title" >
         </activity>
+        <activity
+            android:name="com.example.myappdemo.ZuFangActivityDetails"
+            android:label="@string/title_activity_zu_fang_activity_details" >
+        </activity>
     </application>
 
 </manifest>

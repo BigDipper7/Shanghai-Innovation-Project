@@ -18,7 +18,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SimpleAdapter;
 
-import com.example.myappdemo.utils.model.DataGenUtil;
+import com.example.myappdemo.utils.model.DataGenUtil4ActivMain;
 import com.example.myappdemo.utils.view.GenerateXML;
 
 public class MainActivity extends Activity {
@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
 	private LinearLayout ll1, ll2, ll3, ll4;
-	private Button page1Btn_11, page1Btn_12, page1Btn_13, page1Btn_21, page1Btn_22, page1Btn_23;
+	private Button page1Btn_11, page1Btn_12, page1Btn_13, page1Btn_21, page1Btn_22, page1Btn_23, page2Btn_search;
 	private PagerAdapter pagerAdapter;//Adapter for viewpager 
 	private SimpleAdapter simpleAdapter1, simpleAdapter2, simpleAdapter3, simpleAdapter4;
 	
@@ -104,7 +104,8 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				startActivity(new Intent(MainActivity.this, ZuFangActivity.class));
+				viewPager.setCurrentItem(1, true);//跳转到第二个界面 搜索界面  实现逻辑就是 先是跳转 然后就是搜索 然后就是显示ZuFangActivity
+//				startActivity(new Intent(MainActivity.this, ZuFangActivity.class));
 			}
 		});
 		page1Btn_21.setOnClickListener(new OnClickListener() {
@@ -125,10 +126,24 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
+//				viewPager.setCurrentItem(3, true);
 				startActivity(new Intent(MainActivity.this, WoYaoChuZuActivity.class));
 			}
 		});
-				
+		
+		
+		/*
+		 * initialize page2 button {search button}
+		 * */
+		page2Btn_search = (Button) page2.findViewById(R.id.button1);
+		page2Btn_search.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(MainActivity.this, ZuFangActivity.class));
+			}
+		});
+		
 		/*
 		 * initialize adapters
 		 * */
@@ -167,10 +182,10 @@ public class MainActivity extends Activity {
 				return super.getItemPosition(object);
 			}
 		};
-		simpleAdapter1 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData1(), R.layout.page_1_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
-		simpleAdapter2 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
-		simpleAdapter3 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
-		simpleAdapter4 = new SimpleAdapter(MainActivity.this, DataGenUtil.getData4(), R.layout.page_4_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
+		simpleAdapter1 = new SimpleAdapter(MainActivity.this, DataGenUtil4ActivMain.getData1(), R.layout.page_1_item_for_linearlayout, new String[] {"txt", "imgEnd"}, new int[] {R.id.textView1, R.id.imageView2});
+		simpleAdapter2 = new SimpleAdapter(MainActivity.this, DataGenUtil4ActivMain.getData2(), R.layout.page_2_item_for_linearlayout, new String[] {"txt1", "txt2", "imgEnd"}, new int[] {R.id.textView1, R.id.textView2, R.id.imageView2});
+		simpleAdapter3 = new SimpleAdapter(MainActivity.this, DataGenUtil4ActivMain.getData3(), R.layout.page_3_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
+		simpleAdapter4 = new SimpleAdapter(MainActivity.this, DataGenUtil4ActivMain.getData4(), R.layout.page_4_item_for_linearlayout, new String[] {"img", "txt", "imgEnd"}, new int[] {R.id.imageView1, R.id.textView1, R.id.imageView2});
 		
 		/*
 		 * adapter -> view -> insert in linearlayout
