@@ -43,10 +43,8 @@ public class GenerateXML {
 
 			linearLayout.addView(v);
 		}
-		Log.e("GenXML-drawable",
-				"context.getResources().getDrawable(R.drawable.qav_video_header_animation)");
-		linearLayout.setDividerDrawable(context.getResources().getDrawable(
-				R.drawable.qav_video_header_animation));
+//		Log.e("GenXML-drawable","context.getResources().getDrawable(R.drawable.qav_video_header_animation)");
+//		linearLayout.setDividerDrawable(context.getResources().getDrawable(R.drawable.qav_video_header_animation));
 		return 0;
 	}
 }

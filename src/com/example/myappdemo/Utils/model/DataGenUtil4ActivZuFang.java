@@ -11,7 +11,6 @@ public class DataGenUtil4ActivZuFang {
 	/**
 	 * Generate Data 4 Activity ZuFang
 	 */
-	
 	public static List<Map<String, Object>> getData1() {
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
 

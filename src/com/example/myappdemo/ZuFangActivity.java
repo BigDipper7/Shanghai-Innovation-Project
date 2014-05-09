@@ -25,7 +25,7 @@ public class ZuFangActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        setContentView(R.layout.activity_xin_fang);
+        setContentView(R.layout.activity_zu_fang);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.titlebar);
         
         /*
@@ -42,7 +42,7 @@ public class ZuFangActivity extends Activity {
         titleBarTitle_tv = (TextView) findViewById(R.id.textView1);
         titleBarTitle_tv.setText("×â·¿");
         
-//        init();
+        init();
 	}
 
 	private void init() {
@@ -56,7 +56,7 @@ public class ZuFangActivity extends Activity {
 		 * */
 		simpleAdapter = new SimpleAdapter(ZuFangActivity.this, DataGenUtil4ActivZuFang.getData1(), R.layout.page_1_button13_item_for_linearlayout, new String[] {"img1", "txt", "imgEnd"}, new int[] {R.id.imageView1 ,R.id.textView1, R.id.imageView2});
 		
-		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter, ZuFangActivity.this, 1);
+		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter, ZuFangActivity.this, 113);
 	}
 
 	@Override

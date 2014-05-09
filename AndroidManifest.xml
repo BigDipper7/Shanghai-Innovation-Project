@@ -54,7 +54,8 @@
         </activity>
         <activity
             android:name="com.example.myappdemo.ZuFangActivityDetails"
-            android:label="@string/title_activity_zu_fang_activity_details" >
+            android:label="@string/title_activity_zu_fang_activity_details"
+            android:theme="@style/custom_title" >
         </activity>
     </application>
 
