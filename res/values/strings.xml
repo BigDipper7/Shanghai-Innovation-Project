@@ -15,5 +15,6 @@
     <string name="title_activity_wo_yao_buy">WoYaoBuyActivity</string>
     <string name="title_activity_zu_fang_activity_details">ZuFangActivityDetails</string>
     <string name="title_activity_change_city">ChangeCityActivity</string>
+    <string name="title_activity_yong_hu_fan_kui">YongHuFanKuiActivity</string>
 
 </resources>

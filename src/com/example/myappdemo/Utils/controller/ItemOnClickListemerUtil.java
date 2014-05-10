@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.sax.StartElementListener;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 
 import com.example.myappdemo.R;
 import com.example.myappdemo.activity.main.ZuFangActivityDetails;
+import com.example.myappdemo.activity.page4.YongHuFanKuiActivity;
 
 public class ItemOnClickListemerUtil {
 	
@@ -145,7 +147,7 @@ public class ItemOnClickListemerUtil {
 
 					break;
 				case 3://用户反馈
-
+					context.startActivity(new Intent(context, YongHuFanKuiActivity.class));
 					break;
 				case 4://使用帮助
 					final View dialogContent4 = LayoutInflater.from(context).inflate(R.layout.page_4_dialog_help, null);
