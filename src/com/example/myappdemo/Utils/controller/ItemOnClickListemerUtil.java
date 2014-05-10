@@ -115,19 +115,19 @@ public class ItemOnClickListemerUtil {
 			public void onClick(View v) {
 				switch (i) {
 				case 0://切换城市
-					final View dialogContent = LayoutInflater.from(context).inflate(R.layout.page_4_select_dialog, null);
-					final AlertDialog alertDialog = new AlertDialog.Builder(context).setTitle("请选择城市").setView(dialogContent).create();//实现方式 弹出弹窗
-					alertDialog.show();
-					RadioGroup group = (RadioGroup) dialogContent.findViewById(R.id.radioGroup);
-					group.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+					final View dialogContent1 = LayoutInflater.from(context).inflate(R.layout.page_4_select_dialog, null);
+					final AlertDialog alertDialog1 = new AlertDialog.Builder(context).setTitle("请选择城市").setView(dialogContent1).create();//实现方式 弹出弹窗
+					alertDialog1.show();
+					RadioGroup group1 = (RadioGroup) dialogContent1.findViewById(R.id.radioGroup);
+					group1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 						
 						@Override
 						public void onCheckedChanged(RadioGroup arg0, int arg1) {
-							alertDialog.dismiss();
+							alertDialog1.dismiss();
 							//获取变更后的选中项的ID
 							int radioButtonId = arg0.getCheckedRadioButtonId();
 							//根据ID获取RadioButton的实例
-							RadioButton rb = (RadioButton)dialogContent.findViewById(radioButtonId);
+							RadioButton rb = (RadioButton)dialogContent1.findViewById(radioButtonId);
 							//更新文本内容，以符合选中项
 							String str = (String) rb.getText();
 							Log.e("---> CustomDialog - TextSlected", str);
@@ -148,13 +148,19 @@ public class ItemOnClickListemerUtil {
 
 					break;
 				case 4://使用帮助
-
+					final View dialogContent4 = LayoutInflater.from(context).inflate(R.layout.page_4_dialog_help, null);
+					final AlertDialog alertDialog4 = new AlertDialog.Builder(context).setTitle("Help").setView(dialogContent4).create();//实现方式 弹出弹窗
+					alertDialog4.show();
 					break;
 				case 5://关于我们
-
+					final View dialogContent5 = LayoutInflater.from(context).inflate(R.layout.page_4_dialog_about_us, null);
+					final AlertDialog alertDialog5 = new AlertDialog.Builder(context).setTitle("About Us").setView(dialogContent5).create();//实现方式 弹出弹窗
+					alertDialog5.show();
 					break;
 				case 6://免责声明
-
+					final View dialogContent6 = LayoutInflater.from(context).inflate(R.layout.page_4_dialog_mian_ze, null);
+					final AlertDialog alertDialog6 = new AlertDialog.Builder(context).setTitle("免责声明").setView(dialogContent6).create();//实现方式 弹出弹窗
+					alertDialog6.show();
 					break;
 					
 				default:

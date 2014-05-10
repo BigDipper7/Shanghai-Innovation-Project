@@ -136,10 +136,13 @@ public final class R {
         public static final int page_3=0x7f03001a;
         public static final int page_3_item_for_linearlayout=0x7f03001b;
         public static final int page_4=0x7f03001c;
-        public static final int page_4_item_for_linearlayout=0x7f03001d;
-        public static final int page_4_select_dialog=0x7f03001e;
-        public static final int page_liststyle_for_listview=0x7f03001f;
-        public static final int titlebar=0x7f030020;
+        public static final int page_4_dialog_about_us=0x7f03001d;
+        public static final int page_4_dialog_help=0x7f03001e;
+        public static final int page_4_dialog_mian_ze=0x7f03001f;
+        public static final int page_4_item_for_linearlayout=0x7f030020;
+        public static final int page_4_select_dialog=0x7f030021;
+        public static final int page_liststyle_for_listview=0x7f030022;
+        public static final int titlebar=0x7f030023;
     }
     public static final class menu {
         public static final int change_city=0x7f070000;
