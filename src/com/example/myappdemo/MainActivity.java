@@ -1,10 +1,13 @@
 package com.example.myappdemo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -22,7 +25,7 @@ import com.example.myappdemo.Utils.model.DataGenUtil;
 import com.example.myappdemo.Utils.view.GenerateXML;
 
 public class MainActivity extends Activity {
-	public String user;
+	private List<User> usergroup=new ArrayList<User>();
 	private List<String>  titleList = new ArrayList<String>();
 	private List<View> viewList = new ArrayList<View>();
 	private ViewPager viewPager;//ViewPager 
@@ -66,9 +69,30 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Log.i("heloo", "注销");
-				user="null";
 			}
 		});
+		
+		
+		
+		//讀取數據
+		int count=readSharedPreferencesInt("count");
+		for(int i=0;i<count;i++){
+		String user=readSharedPreferencesString("user");
+		String location=readSharedPreferencesString("location");
+		int price=readSharedPreferencesInt("price");
+		User us=new User();
+		
+		us.setUserName(user);
+		us.setLocation(location);
+		us.setPrice(price);
+		
+		usergroup.add(us);
+		}
+		Bundle bundle=new Bundle();
+		bundle.putSerializable("user",(Serializable) usergroup);
+		
+		
+		
 		
 		viewList.add(page1);
 		viewList.add(page2);
@@ -132,10 +156,10 @@ public class MainActivity extends Activity {
 		 * adapter -> view -> insert in linearlayout
 		 * in the meantime  genItems for LinearLayout
 		 * */
-		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this, 1,user);
-		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2, MainActivity.this, 2,user);
-		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this, 3,user);
-		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this, 4,user);
+		GenerateXML.genLinearLayoutItems(ll1, simpleAdapter1, MainActivity.this, 1,bundle);
+		GenerateXML.genLinearLayoutItems(ll2, simpleAdapter2, MainActivity.this, 2,bundle);
+		GenerateXML.genLinearLayoutItems(ll3, simpleAdapter3, MainActivity.this, 3,bundle);
+		GenerateXML.genLinearLayoutItems(ll4, simpleAdapter4, MainActivity.this, 4,bundle);
 	
 		/*
 		 *  set adapter
@@ -159,6 +183,77 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	
+	 private void saveSharedPreferences(String arg0,boolean bool){  
+	        /* 
+	         * getSharedPreferences(String name,int mode)方法是在Context中定义的抽象方法，在ContextWrapper中进行了具体实现， 
+	         * 该方法会根据用户传递的名称和写入类型创建一个SharedPreferences对象进行返回。 
+	         * 在Activity中，还有一个方法可以回去SharedPreferences对象，这个方法就是SharedPreferences sharedPreferences = getPreferences(MODE_PRIVATE); 
+	         * 改方法在Activity中定义并实现，这里没有name参数是因为该方法默认将当前Activity的类名作为name属性（这里的类名并不包含包路径哦） 
+	         * */  
+	        SharedPreferences sharedPreferences = getSharedPreferences("preferences", MODE_PRIVATE);  
+	          
+	        //存储数据  
+	        SharedPreferences.Editor editor = sharedPreferences.edit();  
+	        editor.putBoolean(arg0, bool);
+	        Boolean b = editor.commit();  
+	          
+	        if(b){  
+	            Log.i("通知：", "保存成功！");  
+	        }else{  
+	            Log.i("通知", "保存失败！");  
+	        }  
+	          
+	    }  
+	 private void saveSharedPreferences(String arg0,int arg1){  
+	        SharedPreferences sharedPreferences = getSharedPreferences("preferences", MODE_PRIVATE);  
+	          
+	        //存储数据  
+	        SharedPreferences.Editor editor = sharedPreferences.edit();  
+	        editor.putInt(arg0, arg1);
+	        Boolean b = editor.commit();  
+	          
+	        if(b){  
+	            Log.i("通知：", "保存成功！");  
+	        }else{  
+	            Log.i("通知", "保存失败！");  
+	        }  
+	          
+	    }  
+	      
+	 private void saveSharedPreferences(String arg0,String arg1){  
+	        SharedPreferences sharedPreferences = getSharedPreferences("preferences", MODE_PRIVATE);  
+	          
+	        //存储数据  
+	        SharedPreferences.Editor editor = sharedPreferences.edit();  
+	        editor.putString(arg0, arg1);
+	        Boolean b = editor.commit();  
+	          
+	        if(b){  
+	            Log.i("通知：", "保存成功！");  
+	        }else{  
+	            Log.i("通知", "保存失败！");  
+	        }  
+	          
+	    }  
+
+	    private String readSharedPreferencesString(String arg0){   
+	        String result = "" ;  
+	        SharedPreferences sharedPreferences = this.getSharedPreferences("preferences", MODE_PRIVATE);  
+	        result+=sharedPreferences.getString(arg0, "暂时没有人"); 
+			return result;  	        
+	    }  
+	    private int readSharedPreferencesInt(String arg0){   
+	        int result = 0 ;  
+	        SharedPreferences sharedPreferences = this.getSharedPreferences("preferences", MODE_PRIVATE);  
+	        result=sharedPreferences.getInt(arg0, 0); 
+			return result;  	        
+	    }  
+	    private Boolean readSharedPreferencesBoolean(String arg0){   
+	        Boolean result = false ;  
+	        SharedPreferences sharedPreferences = this.getSharedPreferences("preferences", MODE_PRIVATE);  
+	        result=sharedPreferences.getBoolean(arg0, false); 
+			return result;  	        
+	    }  
+
 
 }

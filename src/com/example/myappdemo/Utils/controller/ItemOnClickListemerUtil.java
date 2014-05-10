@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -84,7 +85,7 @@ public class ItemOnClickListemerUtil {
 			}
 		});
 	}
-	public static void setPage3OnClickListener( final Context context, final View view,  final int i,final String user) {
+	public static void setPage3OnClickListener( final Context context, final View view,  final int i,final Bundle bundle) {
 		view.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -95,31 +96,31 @@ public class ItemOnClickListemerUtil {
 				switch (i) {
 				case 0:{
 					Intent intent=new Intent(context,hehe.class);
-					intent.putExtra("user", user);
+					intent.putExtras(bundle);
 					context.startActivity(intent);
 					break;
 					}
 				case 1: {
 					Intent intent=new Intent(context,hehe.class);
-					intent.putExtra("user", user);
+					intent.putExtras(bundle);
 					context.startActivity(intent);
 					break;
 					}			
 				case 2: {
 					Intent intent=new Intent(context,hehe.class);
-					intent.putExtra("user", user);
+					intent.putExtras(bundle);
 					context.startActivity(intent);
 					break;
 					}
 				case 3:{
 					Intent intent=new Intent(context,hehe.class);
-					intent.putExtra("user", user);
+					intent.putExtras(bundle);
 					context.startActivity(intent);
 					break;
 					}	
 				case 4:{
 					Intent intent=new Intent(context,hehe.class);
-					intent.putExtra("user", user);
+					intent.putExtras(bundle);
 					context.startActivity(intent);
 					break;
 					}	
@@ -129,5 +130,10 @@ public class ItemOnClickListemerUtil {
 			}
 		});
 		}
+	
+
+	
+	
+	
 	
 }
