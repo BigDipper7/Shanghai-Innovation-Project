@@ -66,26 +66,27 @@ public final class R {
         public static final int selector_item_bg_bottom=0x7f02002a;
         public static final int selector_item_bg_middle=0x7f02002b;
         public static final int seletor_item_bg_top=0x7f02002c;
-        public static final int titlebar_back_btn_selector=0x7f02002d;
-        public static final int titlebar_bg=0x7f02002e;
-        public static final int titlebar_confirm_btn_selector=0x7f02002f;
-        public static final int triangle=0x7f020030;
-        public static final int triangle_blue=0x7f020031;
-        public static final int txt_search_default=0x7f020032;
-        public static final int zfhjq_n=0x7f020033;
+        public static final int square_bg=0x7f02002d;
+        public static final int titlebar_back_btn_selector=0x7f02002e;
+        public static final int titlebar_bg=0x7f02002f;
+        public static final int titlebar_confirm_btn_selector=0x7f020030;
+        public static final int triangle=0x7f020031;
+        public static final int triangle_blue=0x7f020032;
+        public static final int txt_search_default=0x7f020033;
+        public static final int zfhjq_n=0x7f020034;
     }
     public static final class id {
         public static final int action_settings=0x7f080022;
-        public static final int button1=0x7f080008;
-        public static final int button2=0x7f080009;
-        public static final int button3=0x7f08000a;
-        public static final int button4=0x7f08000b;
-        public static final int button5=0x7f08000c;
-        public static final int button6=0x7f08000d;
-        public static final int editText1=0x7f08000f;
-        public static final int imageView1=0x7f080005;
-        public static final int imageView2=0x7f08000e;
-        public static final int linearLayout1=0x7f080003;
+        public static final int button1=0x7f080009;
+        public static final int button2=0x7f08000a;
+        public static final int button3=0x7f08000b;
+        public static final int button4=0x7f08000c;
+        public static final int button5=0x7f08000d;
+        public static final int button6=0x7f08000e;
+        public static final int editText1=0x7f080002;
+        public static final int imageView1=0x7f080006;
+        public static final int imageView2=0x7f08000f;
+        public static final int linearLayout1=0x7f080004;
         public static final int pagertab=0x7f080001;
         public static final int radioButton1=0x7f080012;
         public static final int radioButton10=0x7f08001b;
@@ -105,10 +106,10 @@ public final class R {
         public static final int radioButton9=0x7f08001a;
         public static final int radioGroup=0x7f080011;
         public static final int scrollView1=0x7f080010;
-        public static final int section_label=0x7f080004;
-        public static final int textView1=0x7f080002;
-        public static final int textView2=0x7f080006;
-        public static final int textView3=0x7f080007;
+        public static final int section_label=0x7f080005;
+        public static final int textView1=0x7f080003;
+        public static final int textView2=0x7f080007;
+        public static final int textView3=0x7f080008;
         public static final int viewpager=0x7f080000;
     }
     public static final class layout {
