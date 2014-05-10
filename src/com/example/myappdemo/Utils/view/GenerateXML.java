@@ -27,14 +27,15 @@ public class GenerateXML {
 			case 1:
 				break;
 			case 2:
-				ItemOnClickListemerUtil.setPage2OnClickListener(context, v, i);
+				ItemOnClickListemerUtil.setPage2OnClickListener(context, v, i);//page2 的界面元素监听
 				break;
 			case 3:
 				break;
 			case 4:
+				ItemOnClickListemerUtil.setPage4OnClickListener(context, v, i);//page4 的界面元素监听
 				break;
 			case 113://page1-->button13-->linearlayout's item
-				ItemOnClickListemerUtil.setPage1Button13OnClickListener(context, v);
+				ItemOnClickListemerUtil.setPage1Button13OnClickListener(context, v);//page1-btn13-zufangActivity中的linearlayout子项监听
 				break;
 			
 			default:

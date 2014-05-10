@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.myappdemo.MainActivity"
+            android:name="com.example.myappdemo.activity.main.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,37 +23,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.myappdemo.XinFangActivity"
+            android:name="com.example.myappdemo.activity.main.XinFangActivity"
             android:label="@string/title_activity_xin_fang"
             android:theme="@style/custom_title" >
         </activity>
         <activity
-            android:name="com.example.myappdemo.ErShouFangActivity"
+            android:name="com.example.myappdemo.activity.main.ErShouFangActivity"
             android:label="@string/title_activity_er_shou_fang"
             android:theme="@style/custom_title" >
         </activity>
         <activity
-            android:name="com.example.myappdemo.ZuFangActivity"
+            android:name="com.example.myappdemo.activity.main.ZuFangActivity"
             android:label="@string/title_activity_zu_fang"
             android:theme="@style/custom_title" >
         </activity>
         <activity
-            android:name="com.example.myappdemo.ZhouBianFangJiaActivity"
+            android:name="com.example.myappdemo.activity.main.ZhouBianFangJiaActivity"
             android:label="@string/title_activity_zhou_bian_fang_jia"
             android:theme="@style/custom_title" >
         </activity>
         <activity
-            android:name="com.example.myappdemo.WoYaoMaiFangActivity"
+            android:name="com.example.myappdemo.activity.main.WoYaoMaiFangActivity"
             android:label="@string/title_activity_wo_yao_sell"
             android:theme="@style/custom_title" >
         </activity>
         <activity
-            android:name="com.example.myappdemo.WoYaoChuZuActivity"
+            android:name="com.example.myappdemo.activity.main.WoYaoChuZuActivity"
             android:label="@string/title_activity_wo_yao_buy"
             android:theme="@style/custom_title" >
         </activity>
         <activity
-            android:name="com.example.myappdemo.ZuFangActivityDetails"
+            android:name="com.example.myappdemo.activity.main.ZuFangActivityDetails"
             android:label="@string/title_activity_zu_fang_activity_details"
             android:theme="@style/custom_title" >
         </activity>
