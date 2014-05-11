@@ -87,18 +87,20 @@ public class MainActivity extends Activity {
 		/*
 		 * initialize page1 buttons OnClickListener --->  go to different activities
 		 * */
-		page1Btn_11.setOnClickListener(new OnClickListener() {
+		page1Btn_11.setOnClickListener(new OnClickListener() {//新房
 			
 			@Override
 			public void onClick(View arg0) {
-				startActivity(new Intent(MainActivity.this, XinFangActivity.class));
+				viewPager.setCurrentItem(2, true);
+//				startActivity(new Intent(MainActivity.this, XinFangActivity.class));
 			}
 		});
-		page1Btn_12.setOnClickListener(new OnClickListener() {
+		page1Btn_12.setOnClickListener(new OnClickListener() {//二手房
 			
 			@Override
 			public void onClick(View arg0) {
-				startActivity(new Intent(MainActivity.this, ErShouFangActivity.class));
+				viewPager.setCurrentItem(2, true);
+//				startActivity(new Intent(MainActivity.this, ErShouFangActivity.class));
 			}
 		});
 		page1Btn_13.setOnClickListener(new OnClickListener() {

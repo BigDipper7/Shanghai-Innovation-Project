@@ -17,6 +17,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myappdemo.R;
+import com.example.myappdemo.activity.main.ErShouFangActivity;
+import com.example.myappdemo.activity.main.MainActivity;
+import com.example.myappdemo.activity.main.XinFangActivity;
 import com.example.myappdemo.activity.main.ZuFangActivityDetails;
 import com.example.myappdemo.activity.page4.YongHuFanKuiActivity;
 
@@ -105,6 +108,42 @@ public class ItemOnClickListemerUtil {
 	}
 
 	/**
+	 * view 的onClick监听函数 是第二个界面page2的linearlayout子项监听函数
+	 * @param context 
+	 * @param view 最后监听的子项
+	 * @param i 最终的对应子项的序列号
+	 */
+	public static void setPage3OnClickListener(final Context context, View view, final int i) {
+		view.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				switch (i) {
+				case 0://热门活动
+					
+					break;
+				case 1://我的新房
+					context.startActivity(new Intent(context, XinFangActivity.class));	
+					break;
+				case 2://我的二手房
+					context.startActivity(new Intent(context, ErShouFangActivity.class));
+					break;
+				case 3://我的租房
+					
+					break;
+				case 4://即时通讯
+					
+					break;
+				
+				default:
+					break;
+				}
+			}
+		});
+	}
+	
+	/**
 	 * view 的onClick监听函数 是第四个界面page4的linearlayout子项监听函数
 	 * @param context 
 	 * @param view 最后监听的子项
@@ -173,7 +212,5 @@ public class ItemOnClickListemerUtil {
 		});
 		
 	}
-	
-	
-	
+
 }
