@@ -21,6 +21,8 @@ import com.example.myappdemo.activity.main.ErShouFangActivity;
 import com.example.myappdemo.activity.main.MainActivity;
 import com.example.myappdemo.activity.main.XinFangActivity;
 import com.example.myappdemo.activity.main.ZuFangActivityDetails;
+import com.example.myappdemo.activity.page3.ChattingActivity;
+import com.example.myappdemo.activity.page3.JiShiTongXunActivity;
 import com.example.myappdemo.activity.page4.YongHuFanKuiActivity;
 
 public class ItemOnClickListemerUtil {
@@ -39,8 +41,6 @@ public class ItemOnClickListemerUtil {
 		});
 	}
 
-	
-	
 	/**
 	 * view 的onClick监听函数 是第二个界面page2的linearlayout子项监听函数
 	 * @param context 
@@ -101,14 +101,12 @@ public class ItemOnClickListemerUtil {
 //				Log.e("--->onclicklistener", ""+i);
 ////				customDialog.setCanceledOnTouchOutside(true);
 //				customDialog.show();
-
-
 			}
 		});
 	}
 
 	/**
-	 * view 的onClick监听函数 是第二个界面page2的linearlayout子项监听函数
+	 * view 的onClick监听函数 是第三个界面page3的linearlayout子项监听函数
 	 * @param context 
 	 * @param view 最后监听的子项
 	 * @param i 最终的对应子项的序列号
@@ -133,7 +131,7 @@ public class ItemOnClickListemerUtil {
 					
 					break;
 				case 4://即时通讯
-					
+					context.startActivity(new Intent(context, JiShiTongXunActivity.class));
 					break;
 				
 				default:
@@ -143,6 +141,49 @@ public class ItemOnClickListemerUtil {
 		});
 	}
 	
+	/**
+	 * view 的onClick监听函数 是第三个界面page3的子项Item4 即时通讯Activity界面的linearlayout子项 的监听函数
+	 * @param context 
+	 * @param view 最后监听的子项
+	 * @param i 最终的对应子项的序列号
+	 */
+	public static void setPage3Item4OnClickListener(final Context context, View view) {
+		view.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+//				switch (i) {
+//				case 0:
+//					
+//					break;
+//				case 1:
+//
+//					break;
+//				case 2:	
+//	
+//					break;
+//				case 3:
+//	
+//					break;
+//				case 4:
+//	
+//					break;
+//
+//				default:
+//					break;
+//				}
+				TextView nameTV = (TextView) v.findViewById(R.id.textView2);
+				String name = (String) nameTV.getText();
+				Log.e("User Name", name);
+				Intent intent = new Intent(context, ChattingActivity.class);
+				intent.putExtra("name", name);
+				context.startActivity(intent);
+//				Int resId = 
+			}
+		});
+		
+	}
+
 	/**
 	 * view 的onClick监听函数 是第四个界面page4的linearlayout子项监听函数
 	 * @param context 
@@ -210,7 +251,6 @@ public class ItemOnClickListemerUtil {
 				
 			}
 		});
-		
 	}
 
 }

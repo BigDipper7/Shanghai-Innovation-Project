@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="@dimen/activity_horizontal_margin" >
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
 
     <!-- 出租界面linearlayout的item的格式定义xml -->
 
@@ -38,7 +39,6 @@
         android:layout_width="wrap_content"
         android:layout_height="12dp"
         android:layout_gravity="center_vertical"
-        android:layout_weight="1"
         android:src="@drawable/aio_tips_arrow_gray" />
 
 </LinearLayout>

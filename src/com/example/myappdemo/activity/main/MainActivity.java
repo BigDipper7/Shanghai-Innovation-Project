@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				viewPager.setCurrentItem(1, true);//跳转到第二个界面 搜索界面  实现逻辑就是 先是跳转 然后就是搜索 然后就是显示ZuFangActivity
-//				startActivity(new Intent(MainActivity.this, ZuFangActivity.class));
+//				startActivity(new Intent(MainActivity.this, ZuFangAct·ivity.class));
 			}
 		});
 		page1Btn_21.setOnClickListener(new OnClickListener() {
